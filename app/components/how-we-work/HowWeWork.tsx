@@ -11,7 +11,7 @@ interface HowWeWorkProps {
    sectionSubHeading?: string;
    sectionList?: string[];
    sectionParagraph?: React.ReactNode;
-   sectionBottom?: { heading: string; text: string };
+   sectionBottom?: { heading: string; text?: string };
 }
 function HowWeWork({
    sectionImage,

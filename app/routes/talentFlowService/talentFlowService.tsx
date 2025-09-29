@@ -153,7 +153,10 @@ export default function talentFlowService() {
                },
             ]}
          />
-         <ContactUs />
+         <ContactUs
+            title="Оставьте заявку"
+            subtitle="Узнайте, как мы закроем вашу вакансию через digital-маркетинг"
+         />
       </div>
    );
 }

@@ -173,7 +173,10 @@ function adManagementService() {
                },
             ]}
          />
-         <ContactUs />
+         <ContactUs
+            title="Хотите результат?"
+            subtitle="Запустим кампанию под вашу задачу за 24 часа"
+         />
          <Faq faqList={faqList} />
       </div>
    );

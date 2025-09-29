@@ -52,7 +52,7 @@ export default function Home() {
          <div id="about-us">
             <AboutUs />
          </div>
-         <ContactUs />
+         <ContactUs title="Готовы подключиться?" subtitle="Оставьте заявку" />
          <Faq faqList={faqList} />
          <TextSlider />
       </div>

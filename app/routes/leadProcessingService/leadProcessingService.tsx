@@ -109,7 +109,10 @@ function leadProcessingService() {
             ]}
          />
          <WorkFormat />
-         <ContactUs />
+         <ContactUs
+            title="Заказать посадочную страницу"
+            subtitle="Оставьте заявку"
+         />
       </div>
    );
 }

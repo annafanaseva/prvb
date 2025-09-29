@@ -6,6 +6,7 @@ import ServiceOverview from "~/components/service-overview/ServiceOverview";
 import HowWeWork from "~/components/how-we-work/HowWeWork";
 import PerformanceMetrics from "~/components/performance-metrics/PerformanceMetrics";
 import TelegramChannels from "~/components/telegram-channels/TelegramChannels";
+import NewClient from "~/components/new-client/NewClient";
 import ContactUs from "~/components/contact-us/ContactUs";
 import heroImage from "./hero-image.jpg";
 import howWeWorkImage from "./how-we-work.jpg";
@@ -161,7 +162,23 @@ function tgNetworkService() {
             ]}
          />
          <TelegramChannels />
-         <ContactUs />
+         <NewClient
+            title={
+               <>
+                  Для новых клиентов первый пост на канале
+                  <span className="highlight"> - бесплатно!</span>
+               </>
+            }
+            subTitle={
+               <>
+                  Ждем ваши посты с пометкой -{" "}
+                  <span className="highlight">
+                     новый клиент с сайта PRVB.ru
+                  </span>
+               </>
+            }
+         />
+         <ContactUs title="Хотите результат?" subtitle="Оставьте заявку" />
       </div>
    );
 }

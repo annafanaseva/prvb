@@ -121,7 +121,10 @@ function creativeAdsService() {
                к действию
             </p>
          </section>
-         <ContactUs />
+         <ContactUs
+            title="Хотите заказать креатив?"
+            subtitle="Мы разработаем креатив, который работает на найм, а не на лайк"
+         />
          <Faq faqList={faqList} />
       </div>
    );

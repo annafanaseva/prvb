@@ -109,7 +109,10 @@ function landingService() {
                text: "Правильный текст, дизайн, структура — всё работает на цель",
             }}
          />
-         <ContactUs />
+         <ContactUs
+            title="Заказать посадочную страницу"
+            subtitle="Срок разработки от 1 дня"
+         />
          <Faq faqList={faqList} />
       </div>
    );

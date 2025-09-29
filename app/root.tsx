@@ -46,6 +46,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                name="viewport"
                content="width=device-width, initial-scale=1"
             />
+            <meta name="yandex-verification" content="2507a8803572ae5d" />
             <Meta />
             <Links />
          </head>

@@ -45,7 +45,11 @@ function Footer() {
                   </svg>
                   <ul className="footer__social-list">
                      <li className="footer__social-link">
-                        <Link to="#" data-testid="footer-contact-social-link">
+                        <Link
+                           target="_blank"
+                           to="tel:+74993808916"
+                           data-testid="footer-contact-social-link"
+                        >
                            <svg
                               width="15"
                               height="15"
@@ -61,7 +65,11 @@ function Footer() {
                         </Link>
                      </li>
                      <li className="footer__social-link">
-                        <Link to="#" data-testid="footer-contact-social-link">
+                        <Link
+                           target="_blank"
+                           to="https://wa.me/+79685933779"
+                           data-testid="footer-contact-social-link"
+                        >
                            <svg
                               width="18"
                               height="18"
@@ -77,7 +85,11 @@ function Footer() {
                         </Link>
                      </li>
                      <li className="footer__social-link">
-                        <Link to="#" data-testid="footer-contact-social-link">
+                        <Link
+                           target="_blank"
+                           to="https://t.me/rabota_vacansii_tg"
+                           data-testid="footer-contact-social-link"
+                        >
                            <svg
                               width="19"
                               height="15"
@@ -124,7 +136,11 @@ function Footer() {
                         </Link>
                      </li>
                      <li className="footer__social-link">
-                        <Link to="#" data-testid="footer-contact-social-link">
+                        <Link
+                           target="_blank"
+                           to="mailto:reclama@prvb.ru"
+                           data-testid="footer-contact-social-link"
+                        >
                            <svg
                               width="18"
                               height="14"
@@ -139,8 +155,12 @@ function Footer() {
                            </svg>
                         </Link>
                      </li>
-                     <li className="footer__social-link">
-                        <Link to="#" data-testid="footer-contact-social-link">
+                     {/* <li className="footer__social-link">
+                        <Link
+                           target="_blank"
+                           to="#"
+                           data-testid="footer-contact-social-link"
+                        >
                            <svg
                               width="16"
                               height="16"
@@ -154,7 +174,7 @@ function Footer() {
                               />
                            </svg>
                         </Link>
-                     </li>
+                     </li> */}
                   </ul>
                </div>
             </div>

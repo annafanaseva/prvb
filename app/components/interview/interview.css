@@ -1,0 +1,30 @@
+.interview {
+   width: 90%;
+   margin: 80px auto 0;
+   padding: 30px;
+   border-radius: 30px;
+   background: #fbfbfb;
+}
+
+.interview__question {
+   font-family: "Roboto", sans-serif;
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: #f25900; /* яркий акцент */
+   margin-bottom: 20px;
+}
+
+.interview__answer {
+   display: flex;
+   align-items: flex-start;
+   gap: 10px;
+   font-family: "Roboto", sans-serif;
+   font-size: 1.25rem;
+   line-height: 1.6;
+   color: #252527;
+   position: relative;
+}
+
+.interview__answer-text {
+   flex: 1;
+}

@@ -16,4 +16,9 @@ export default [
    route("contact", "./routes/contact/contact.tsx"),
    route("privacy-policy", "./routes/privacyPolicy/privacyPolicy.tsx"),
    route("consent-page", "./routes/consentPage/consentPage.tsx"),
+   route("blog", "./routes/blog/blog.tsx"),
+   route(
+      "case-lead-generation",
+      "./routes/caseLeadGeneration/caseLeadGeneration.tsx"
+   ),
 ] satisfies RouteConfig;

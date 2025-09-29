@@ -15,7 +15,6 @@ import slide10 from "/about-us/slide10.png";
 import slide11 from "/about-us/slide11.png";
 import slide12 from "/about-us/slide12.png";
 import slide13 from "/about-us/slide13.png";
-import slide14 from "/about-us/slide14.png";
 import "./about-us.css";
 
 const slides = [
@@ -32,7 +31,6 @@ const slides = [
    slide11,
    slide12,
    slide13,
-   slide14,
 ];
 
 function AboutUs() {

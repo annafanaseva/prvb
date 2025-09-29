@@ -4,7 +4,12 @@ import { Link } from "react-router";
 import image from "/contact-us-image.jpg";
 import "./contact-us.css";
 
-function ContactUs() {
+interface ContactUsProps {
+   title: string;
+   subtitle: string;
+}
+
+function ContactUs({ title, subtitle }: ContactUsProps) {
    const initialState = {
       name: "",
       telephone: "",
@@ -75,13 +80,13 @@ function ContactUs() {
                      className="contact-us__form-title"
                      data-testid="contact-us-form-title"
                   >
-                     Готовы подключиться?
+                     {title}
                   </h4>
                   <h5
                      className="contact-us__form-sub-title"
                      data-testid="contact-us-sub-form-title"
                   >
-                     Оставьте заявку
+                     {subtitle}
                   </h5>
                   <form className="contact-us__form" onSubmit={handleSubmit}>
                      <label htmlFor="name">
