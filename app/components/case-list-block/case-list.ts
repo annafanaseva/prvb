@@ -1,8 +1,8 @@
-import caseImageLeadGeneration from "/case-list/lead-generation.jpg";
+import caseImageLeadGeneration from "/case-list/lead-generation.png";
 
 export const servicesList = [
    {
-      label: "Что такое кадровая лидогенерация?",
+      label: "Интервью с экспертом: что такое кадровая лидогенерация?",
       image: caseImageLeadGeneration,
       href: "/case-lead-generation",
    },

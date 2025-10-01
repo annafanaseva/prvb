@@ -3,7 +3,7 @@ import ServiceDescription from "~/components/service-description/ServiceDescript
 import HowWeWork from "~/components/how-we-work/HowWeWork";
 import ContactUs from "~/components/contact-us/ContactUs";
 import person from "./person.jpeg";
-import heroImage from "./hero-image.jpg";
+import heroImage from "./hero-image.png";
 import infoImage from "./info-image.jpg";
 import leadGeneration from "./lead-generation.jpg";
 import Interview from "~/components/interview/Interview";

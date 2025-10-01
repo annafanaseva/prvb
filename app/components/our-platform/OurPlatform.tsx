@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router";
 import rabotnikImage from "/rabotnik-logo.webp";
 import Button from "../button/Button";
 import "./our-platform.css";
@@ -180,8 +181,14 @@ function OurPlatform() {
                         </span>
                         <span>
                            Включена в{" "}
-                           <span className="bold">Реестр российского ПО</span>{" "}
-                           (№21655 от 20.02.2024)
+                           <Link
+                              target="_blank"
+                              to="https://reestr.digital.gov.ru/reestr/?tab=registry_active&PROD_NAME=&PROD_REESTR_NUM=21655&CLASSIFIER=&OWNER_NAME=&OWNER_INN=&OWNER_STATUS=&PROD_DES_NUM=&PROD_DES_DATE=&REQ_REG_NUM=&REQ_REG_DATE="
+                           >
+                              <span className="bold">
+                                 Реестр российского ПО (№21655 от 20.02.2024)
+                              </span>
+                           </Link>
                         </span>
                      </li>
 

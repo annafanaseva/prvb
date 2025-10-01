@@ -265,7 +265,8 @@ function Footer() {
                                  />
                               </svg>
                            </span>
-                           г. Москва, Духовской переулок, 17
+                           115093, г. Москва, ул. Павловская, д.27, стр.1, эт.
+                           3, ком 21
                         </li>
                      </ul>
                   </div>
@@ -283,6 +284,13 @@ function Footer() {
                         data-testid="footer-logo-image"
                      />
                   </div>
+                  <span className="footer__bottom-text">
+                     ООО «Правильный Выбор»
+                     <br />
+                     ИНН 7725663390
+                     <br />
+                     ОГРН 1097746031228
+                  </span>
                   <Link to="/privacy-policy" className="footer__bottom-text">
                      Политика конфиденциальности
                   </Link>
