@@ -290,7 +290,7 @@ function Footer() {
                      <br />
                      ОГРН 1097746031228
                      <br />
-                     ООКВЭД 63.11.1
+                     ОКВЭД 63.11.1
                   </span>
                   <Link to="/privacy-policy" className="footer__bottom-text">
                      Политика конфиденциальности
