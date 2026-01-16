@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import "./text-slider.css";
@@ -7,23 +7,17 @@ function TextSlider() {
    const containerRef = useRef<HTMLDivElement>(null);
    useGSAP(
       () => {
+         const slides1 = gsap.utils.toArray<HTMLDivElement>(
+            ".text-slider__slide-text.left"
+         );
+         const slides2 = gsap.utils.toArray<HTMLDivElement>(
+            ".text-slider__slide-text.right"
+         );
+
          let tween1: GSAPTween | null = null;
          let tween2: GSAPTween | null = null;
+
          const runAnimation = () => {
-            if (tween1 !== null) {
-               tween1.kill();
-               tween1 = null;
-            }
-            if (tween2 !== null) {
-               tween2.kill();
-               tween2 = null;
-            }
-            const slides1 = gsap.utils.toArray<HTMLDivElement>(
-               ".text-slider__slide-text.left"
-            );
-            const slides2 = gsap.utils.toArray<HTMLDivElement>(
-               ".text-slider__slide-text.right"
-            );
             const gap = 20;
             const width = slides1[0].offsetWidth + gap;
             const totalWidth = width * slides1.length;
@@ -33,11 +27,22 @@ function TextSlider() {
                   return i * width;
                },
             });
+
             gsap.set(slides2, {
                x: (i) => {
                   return i * width;
                },
             });
+
+            if (tween1 !== null) {
+               tween1.kill();
+               tween1 = null;
+            }
+            if (tween2 !== null) {
+               tween2.kill();
+               tween2 = null;
+            }
+
             tween1 = gsap.to(".text-slider__slide-text.left", {
                duration: 10,
                ease: "none",
@@ -60,7 +65,9 @@ function TextSlider() {
                repeat: -1,
             });
          };
+
          runAnimation();
+
          let lastWidth = 0;
          const handleResize = () => {
             if (window.innerWidth !== lastWidth) {
@@ -68,11 +75,14 @@ function TextSlider() {
                runAnimation();
             }
          };
+
          window.addEventListener("resize", handleResize);
+
          return () => window.removeEventListener("resize", handleResize);
       },
       { scope: containerRef }
    );
+
    return (
       <section className="text-slider" ref={containerRef}>
          <div className="text-slider__slide">
