@@ -4,7 +4,6 @@ import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { servicesList } from "./services-list";
-import { Link } from "react-router";
 import Button from "../button/Button";
 import "./service-list-block.css";
 

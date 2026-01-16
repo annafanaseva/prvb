@@ -7,14 +7,25 @@ import AboutUs from "~/components/about-us-block/AboutUs";
 import ContactUs from "~/components/contact-us/ContactUs";
 import Faq from "~/components/faq/Faq";
 import TextSlider from "~/components/text-slider/TextSlider";
-import heroImage from "./hero-image.jpg";
-import howWeWorkImage from "./how-we-work.jpg";
+import heroImage from "./hero-image.webp";
+import howWeWorkImage from "./how-we-work.webp";
 import { faqList } from "./faqList.";
-import "./home.css";
+import { servicesList } from "~/components/service-list-block/services-list";
 import type { Route } from "./+types/home";
+import "./home.css";
+
+const preloadServiceListImages = servicesList.map((list) => {
+   return {
+      rel: "preload",
+      href: list.image,
+      as: "image",
+   };
+});
 
 export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
+   { rel: "preload", href: howWeWorkImage, as: "image" },
+   ...preloadServiceListImages,
 ];
 
 export default function Home() {
