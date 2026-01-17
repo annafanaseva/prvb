@@ -46,5 +46,5 @@
 }
 
 .text-slider__slide-text.right:last-of-type {
-   transform: translateX(calc(100% + 20px));
+   transform: translateX(calc(-100% - 20px));
 }

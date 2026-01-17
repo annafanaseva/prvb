@@ -32,7 +32,6 @@ function TextSlider() {
                tween1.kill();
                tween1 = null;
             }
-
             if (tween2 !== null) {
                tween2.kill();
                tween2 = null;
@@ -53,9 +52,7 @@ function TextSlider() {
                ease: "none",
                x: `+=${width}`,
                modifiers: {
-                  x: gsap.utils.unitize(
-                     (x) => (parseFloat(x) % totalWidth) - width
-                  ),
+                  x: gsap.utils.unitize((x) => parseFloat(x) % totalWidth),
                },
                repeat: -1,
             });
