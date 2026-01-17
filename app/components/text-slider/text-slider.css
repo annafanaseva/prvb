@@ -2,6 +2,7 @@
    margin-top: 100px;
    padding-bottom: 50px;
    overflow: hidden;
+   position: relative;
    @media only screen and (max-width: 1024px) {
       margin-top: 80px;
    }
@@ -9,6 +10,7 @@
       margin-top: 40px;
    }
 }
+
 .text-slider__slide {
    --height: 176px;
    display: flex;
@@ -22,6 +24,7 @@
       --height: 66px;
    }
 }
+
 .text-slider__slide-text {
    position: absolute;
    font-family: "Roboto", sans-serif;
@@ -36,4 +39,12 @@
    @media only screen and (max-width: 768px) {
       font-size: 3.75rem;
    }
+}
+
+.text-slider__slide-text.left:last-of-type {
+   transform: translateX(calc(100% + 20px));
+}
+
+.text-slider__slide-text.right:last-of-type {
+   transform: translateX(calc(100% + 20px));
 }

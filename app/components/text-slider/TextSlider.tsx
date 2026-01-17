@@ -14,6 +14,8 @@ function TextSlider() {
             ".text-slider__slide-text.right"
          );
 
+         if (!slides1 || !slides2) return;
+
          let tween1: GSAPTween | null = null;
          let tween2: GSAPTween | null = null;
 
@@ -22,22 +24,15 @@ function TextSlider() {
             const width = slides1[0].offsetWidth + gap;
             const totalWidth = width * slides1.length;
 
-            gsap.set(slides1, {
-               x: (i) => {
-                  return i * width;
-               },
-            });
-
-            gsap.set(slides2, {
-               x: (i) => {
-                  return i * width;
-               },
+            gsap.set([slides1, slides2], {
+               clearProps: "x",
             });
 
             if (tween1 !== null) {
                tween1.kill();
                tween1 = null;
             }
+
             if (tween2 !== null) {
                tween2.kill();
                tween2 = null;
@@ -93,6 +88,7 @@ function TextSlider() {
                Давайте работать вместе
             </h3>
          </div>
+
          <div className="text-slider__slide">
             <h3 className="text-slider__slide-text right">
                Давайте работать вместе
