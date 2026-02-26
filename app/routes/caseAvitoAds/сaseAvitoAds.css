@@ -1,0 +1,34 @@
+.main-text_wrapper {
+   margin-top: 20px;
+   max-width: 998px;
+   margin-left: auto;
+   @media only screen and (max-width: 1024px) {
+      margin-top: 10px;
+      width: 640px;
+   }
+   @media only screen and (min-width: 320px) and (max-width: 767px) {
+      width: 100%;
+   }
+}
+.main-text_wrapper-intro {
+   margin-left: auto;
+   font-family: "Roboto", sans-serif;
+   font-size: 2.5rem;
+   line-height: 48px;
+   font-weight: 400;
+   letter-spacing: -0.4px;
+   @media only screen and (max-width: 1024px) {
+      font-size: 1.5rem;
+      line-height: 28.8px;
+   }
+}
+.main-text_wrapper-intro .space {
+   width: 250px;
+   display: inline-block;
+   @media only screen and (max-width: 1024px) {
+      width: 150px;
+   }
+}
+.main-text_wrapper-intro .highlight {
+   color: #d8beff;
+}

@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import {
+   useLocation,
    isRouteErrorResponse,
    Links,
    Meta,
@@ -33,8 +35,12 @@ export const links: Route.LinksFunction = () => [
 
 export function meta({}: Route.MetaArgs) {
    return [
-      { title: "Rabotnik" },
-      { name: "description", content: "Welcome to our landing page" },
+      { title: "Правильный выбор" },
+      {
+         name: "description",
+         content:
+            "Настраиваем рекламу вакансий, продвигаем карьерный сайт и помогаем быстро находить нужных специалистов. Результат — поток релевантных лидов",
+      },
    ];
 }
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -52,10 +58,76 @@ export function Layout({ children }: { children: React.ReactNode }) {
          </head>
          <body>
             {children}
+            {/* Yandex.Metrika counter */}
+            <YandexMetrika />
+            {/* /Yandex.Metrika counter */}
             <ScrollRestoration />
             <Scripts />
          </body>
       </html>
+   );
+}
+
+const YM_ID = 101444747;
+
+function YandexMetrika() {
+   const location = useLocation();
+
+   useEffect(() => {
+      if (typeof window === "undefined") return;
+
+      if ((window as any).ym) return;
+
+      (function (m: any, e: any, t: any, r: any, i: any, k?: any, a?: any) {
+         m[i] =
+            m[i] ||
+            function () {
+               (m[i].a = m[i].a || []).push(arguments);
+            };
+         m[i].l = Date.now();
+         for (let j = 0; j < e.scripts.length; j++) {
+            if (e.scripts[j].src === r) return;
+         }
+         k = e.createElement(t);
+         a = e.getElementsByTagName(t)[0];
+         k.async = 1;
+         k.src = r;
+         a.parentNode.insertBefore(k, a);
+      })(
+         window,
+         document,
+         "script",
+         "https://mc.yandex.ru/metrika/tag.js",
+         "ym"
+      );
+
+      (window as any).ym(YM_ID, "init", {
+         webvisor: true,
+         clickmap: true,
+         accurateTrackBounce: true,
+         trackLinks: true,
+      });
+   }, []);
+
+   useEffect(() => {
+      if (typeof window === "undefined") return;
+      const ym = (window as any).ym;
+      if (!ym) return;
+
+      const url = location.pathname + location.search + location.hash;
+      ym(YM_ID, "hit", url, { referer: document.referrer });
+   }, [location]);
+
+   return (
+      <noscript>
+         <div>
+            <img
+               src={`https://mc.yandex.ru/watch/${YM_ID}`}
+               style={{ position: "absolute", left: "-9999px" }}
+               alt=""
+            />
+         </div>
+      </noscript>
    );
 }
 

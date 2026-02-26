@@ -86,7 +86,7 @@ describe("Foorer component", () => {
 
       expect(footerContactAddress).toBeInTheDocument();
       expect(footerContactAddress).toHaveTextContent(
-         "г. Москва, Духовской переулок, 17"
+         "115093, г. Москва, ул. Павловская, д.27, стр.1"
       );
    });
 

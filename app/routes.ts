@@ -17,6 +17,7 @@ export default [
    route("privacy-policy", "./routes/privacyPolicy/privacyPolicy.tsx"),
    route("consent-page", "./routes/consentPage/consentPage.tsx"),
    route("blog", "./routes/blog/blog.tsx"),
+   route("case-avito-ads", "./routes/caseAvitoAds/caseAvitoAds.tsx"),
    route(
       "case-lead-generation",
       "./routes/caseLeadGeneration/caseLeadGeneration.tsx"
