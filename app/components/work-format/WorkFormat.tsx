@@ -68,7 +68,10 @@ function WorkFormat() {
             </div>
             <div className="work-format__body">
                <div className="work-format__list">
-                  <div className="work-format__item">
+                  <div
+                     className="work-format__item"
+                     data-testid="work-format-list-item"
+                  >
                      <h5 className="work-format__item-heading">&nbsp;</h5>
                      <h5 className="work-format__item-heading">
                         Базовый обзвон
@@ -78,7 +81,10 @@ function WorkFormat() {
                      </h5>
                   </div>
 
-                  <div className="work-format__item">
+                  <div
+                     className="work-format__item"
+                     data-testid="work-format-list-item"
+                  >
                      <p className="work-format__item-inner-list-item">
                         Фиксация отклика
                      </p>
@@ -86,7 +92,10 @@ function WorkFormat() {
                      <p className="work-format__item-inner-list-item">+</p>
                   </div>
 
-                  <div className="work-format__item">
+                  <div
+                     className="work-format__item"
+                     data-testid="work-format-list-item"
+                  >
                      <p className="work-format__item-inner-list-item">
                         Фильтрация по нужным параметрам
                      </p>
@@ -94,7 +103,10 @@ function WorkFormat() {
                      <p className="work-format__item-inner-list-item">+</p>
                   </div>
 
-                  <div className="work-format__item">
+                  <div
+                     className="work-format__item"
+                     data-testid="work-format-list-item"
+                  >
                      <p className="work-format__item-inner-list-item">
                         Презентация вакансии
                      </p>
@@ -102,7 +114,10 @@ function WorkFormat() {
                      <p className="work-format__item-inner-list-item">+</p>
                   </div>
 
-                  <div className="work-format__item">
+                  <div
+                     className="work-format__item"
+                     data-testid="work-format-list-item"
+                  >
                      <p className="work-format__item-inner-list-item">
                         Назначение интервью
                      </p>
@@ -110,7 +125,10 @@ function WorkFormat() {
                      <p className="work-format__item-inner-list-item">+</p>
                   </div>
 
-                  <div className="work-format__item">
+                  <div
+                     className="work-format__item"
+                     data-testid="work-format-list-item"
+                  >
                      <p className="work-format__item-inner-list-item">
                         Передача в CRM
                      </p>
@@ -118,7 +136,10 @@ function WorkFormat() {
                      <p className="work-format__item-inner-list-item">+</p>
                   </div>
 
-                  <div className="work-format__item">
+                  <div
+                     className="work-format__item"
+                     data-testid="work-format-list-item"
+                  >
                      <p className="work-format__item-inner-list-item">
                         Подходит для
                      </p>

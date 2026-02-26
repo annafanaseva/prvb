@@ -1,7 +1,7 @@
 import { test, describe, vi, expect } from "vitest";
 import { MemoryRouter } from "react-router";
 import { render, screen } from "@testing-library/react";
-import image from "../../../routes/home/hero-image.jpg";
+import image from "../../../routes/home/hero-image.webp";
 import Hero from "../Hero";
 
 vi.mock("gsap");

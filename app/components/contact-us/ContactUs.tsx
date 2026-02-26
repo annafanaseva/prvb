@@ -25,7 +25,7 @@ function ContactUs({ title, subtitle }: ContactUsProps) {
          [name]: value,
       }));
    };
-   console.log(import.meta.env.VITE_TEST_API);
+   // console.log(import.meta.env.VITE_TEST_API);
 
    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
@@ -49,14 +49,14 @@ function ContactUs({ title, subtitle }: ContactUsProps) {
          });
 
          const result = await response.json();
-         console.log("Lead created:", result);
+         // console.log("Lead created:", result);
 
          if (result.result) {
-            console.log("Спасибо! Ваша заявка отправлена.");
+            // console.log("Спасибо! Ваша заявка отправлена.");
             alert("Спасибо! Ваша заявка отправлена.");
             setFormState(initialState);
          } else {
-            console.log("Ошибка при отправке, попробуйте снова.");
+            // console.log("Ошибка при отправке, попробуйте снова.");
             alert("Ошибка при отправке, попробуйте снова.");
          }
       } catch (err) {

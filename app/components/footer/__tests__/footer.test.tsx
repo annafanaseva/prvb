@@ -59,7 +59,7 @@ describe("Foorer component", () => {
       const footerLinkList = screen.getAllByTestId("footer-link-list");
 
       // Assert
-      expect(footerLinkList).toHaveLength(5);
+      expect(footerLinkList).toHaveLength(4);
       for (const el of footerLinkList) {
          expect(el).toBeInTheDocument();
       }
@@ -103,7 +103,7 @@ describe("Foorer component", () => {
       );
 
       // Assert
-      expect(footerSocialLinks).toHaveLength(5);
+      expect(footerSocialLinks).toHaveLength(4);
       for (const el of footerSocialLinks) {
          expect(el).toBeInTheDocument();
       }

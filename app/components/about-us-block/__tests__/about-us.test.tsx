@@ -62,7 +62,7 @@ describe("About us component", () => {
       const blockSlideImageList = screen.getAllByTestId("about-us-slide-image");
 
       // Assert
-      expect(blockSlideImageList).toHaveLength(14);
+      expect(blockSlideImageList).toHaveLength(13);
       for (const el of blockSlideImageList) {
          expect(el).toBeInTheDocument();
       }

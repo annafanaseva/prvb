@@ -52,7 +52,7 @@ describe("Work format component block", () => {
       const listItems = screen.getAllByTestId("work-format-list-item");
 
       // Assert
-      expect(listItems.length).toBeGreaterThan(0);
+      expect(listItems).toHaveLength(7);
       for (const el of listItems) {
          expect(el).toBeInTheDocument();
       }
