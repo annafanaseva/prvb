@@ -32,3 +32,317 @@
 .main-text_wrapper-intro .highlight {
    color: #d8beff;
 }
+
+.search-demand-note {
+   overflow: hidden;
+   margin-top: 100px;
+   width: 100%;
+   padding: 0px 120px 50px 120px;
+
+   @media only screen and (max-width: 1300px) {
+      padding: 0px 100px 50px 100px;
+   }
+   @media only screen and (max-width: 1200px) {
+      margin-top: 80px;
+      padding: 0px 60px 50px 60px;
+   }
+   @media only screen and (max-width: 912px) {
+      padding: 0px 20px 50px 20px;
+   }
+   @media only screen and (min-width: 320px) and (max-width: 767px) {
+      margin-top: 40px;
+      padding: 0px 20px 20px 20px;
+   }
+}
+
+.search-demand-note__inner-wrapper {
+   width: 100%;
+   max-width: 1600px;
+   margin: 0 auto;
+}
+
+.search-demand-note__body {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.search-demand-note__text-title {
+   margin-bottom: 20px;
+   font-family: "Roboto", sans-serif;
+   font-size: 2.5rem;
+   line-height: 44px;
+   font-weight: 400;
+   color: #000;
+
+   @media only screen and (min-width: 320px) and (max-width: 767px) {
+      margin-bottom: 15px;
+      font-size: 1.75rem;
+      line-height: 30.8px;
+   }
+}
+
+.search-demand-note__text-title .highlight {
+   color: #d8beff;
+}
+
+.search-demand-note__text-sub-title {
+   margin-bottom: 20px;
+   font-family: "Roboto", sans-serif;
+   font-size: 1.25rem;
+   line-height: 24px;
+   font-weight: 300;
+   color: #000;
+
+   @media only screen and (min-width: 320px) and (max-width: 767px) {
+      font-size: 1rem;
+      line-height: 19.2px;
+   }
+}
+
+.search-demand-note__principle {
+   display: flex;
+   align-items: flex-start;
+   gap: 12px;
+   margin-bottom: 20px;
+}
+
+.search-demand-note__principle-icon {
+   font-size: 1.125rem;
+   line-height: 1;
+   flex-shrink: 0;
+   margin-top: 3px;
+}
+
+.search-demand-note__paragraph {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   font-family: "Roboto", sans-serif;
+   font-size: 1.25rem;
+   line-height: 28px;
+   font-weight: 400;
+   color: #000;
+
+   @media only screen and (min-width: 320px) and (max-width: 767px) {
+      font-size: 1rem;
+      line-height: 19.2px;
+   }
+}
+
+.search-demand-note__quote {
+   font-weight: 500;
+}
+
+.search-demand-note__text-list {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 0;
+   margin: 0;
+}
+
+.search-demand-note__text-list-item {
+   display: inline-flex;
+   align-items: flex-start;
+   gap: 10px;
+   font-family: "Roboto", sans-serif;
+   font-size: 1rem;
+   line-height: 19.2px;
+   font-weight: 400;
+   color: #000;
+
+   svg {
+      flex-shrink: 0;
+      margin-top: 1px;
+   }
+}
+
+.search-demand-note__bottom {
+   background-color: #d8beff;
+   border-radius: 30px;
+   position: relative;
+   width: 100%;
+   padding: 30px;
+
+   @media only screen and (min-width: 320px) and (max-width: 767px) {
+      padding: 20px;
+   }
+}
+
+.search-demand-note__bottom-title {
+   margin-bottom: 10px;
+   font-family: "Roboto", sans-serif;
+   font-size: 2rem;
+   line-height: 35.2px;
+   font-weight: 400;
+   color: #000;
+
+   span {
+      margin-right: 10px;
+   }
+
+   @media only screen and (min-width: 320px) and (max-width: 767px) {
+      font-size: 1.5rem;
+      line-height: 26.4px;
+   }
+}
+
+.search-demand-note__bottom-body,
+.search-demand-note__bottom-author {
+   font-family: "Roboto", sans-serif;
+   font-size: 1.125rem;
+   line-height: 25.2px;
+   font-weight: 300;
+   color: #000;
+
+   @media only screen and (min-width: 320px) and (max-width: 767px) {
+      font-size: 1rem;
+      line-height: 19.2px;
+   }
+}
+
+.search-demand-note__bottom-body {
+   margin-bottom: 15px;
+}
+
+.search-demand-note__bottom-author {
+   font-weight: 400;
+}
+
+.search-demand-note__compare--cards {
+   padding-bottom: 0;
+   border-bottom: none;
+}
+
+.search-demand-note__compare-title {
+   margin-bottom: 40px;
+   font-family: "Roboto", sans-serif;
+   font-size: 3.5rem;
+   line-height: 1.05;
+   font-weight: 500;
+   color: #000;
+
+   @media only screen and (max-width: 1200px) {
+      font-size: 2.8rem;
+   }
+
+   @media only screen and (min-width: 320px) and (max-width: 767px) {
+      margin-bottom: 24px;
+      font-size: 2rem;
+      line-height: 1.1;
+   }
+}
+
+.search-demand-note__compare-grid {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   gap: 24px;
+
+   @media only screen and (max-width: 912px) {
+      grid-template-columns: 1fr;
+   }
+}
+
+.search-demand-note__compare-card {
+   min-height: 100%;
+   padding: 32px;
+   border-radius: 28px;
+   background: #fff;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+
+   @media only screen and (min-width: 320px) and (max-width: 767px) {
+      padding: 20px;
+      border-radius: 20px;
+   }
+}
+
+.search-demand-note__compare-card--pro {
+   background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
+}
+
+.search-demand-note__compare-card--ads {
+   background: linear-gradient(180deg, #f8f2ff 0%, #ffffff 100%);
+}
+
+.search-demand-note__compare-card-head {
+   display: flex;
+   flex-direction: column;
+   gap: 14px;
+   margin-bottom: 28px;
+}
+
+.search-demand-note__compare-badge {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: fit-content;
+   padding: 8px 14px;
+   border-radius: 999px;
+   background-color: #d8beff;
+   font-family: "Roboto", sans-serif;
+   font-size: 0.95rem;
+   line-height: 1;
+   font-weight: 500;
+   color: #000;
+}
+
+.search-demand-note__compare-heading {
+   margin: 0;
+   font-family: "Roboto", sans-serif;
+   font-size: 3rem;
+   line-height: 1.05;
+   font-weight: 500;
+   color: #000;
+
+   @media only screen and (max-width: 1200px) {
+      font-size: 2.3rem;
+   }
+
+   @media only screen and (min-width: 320px) and (max-width: 767px) {
+      font-size: 1.9rem;
+      line-height: 1.1;
+   }
+}
+
+.search-demand-note__compare-list {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 18px;
+}
+
+.search-demand-note__compare-item {
+   display: flex;
+   align-items: flex-start;
+   gap: 14px;
+   font-family: "Roboto", sans-serif;
+   font-size: 1.5rem;
+   line-height: 1.3;
+   font-weight: 400;
+   color: #000;
+
+   @media only screen and (max-width: 1200px) {
+      font-size: 1.25rem;
+   }
+
+   @media only screen and (min-width: 320px) and (max-width: 767px) {
+      font-size: 1rem;
+      line-height: 1.35;
+   }
+}
+
+.search-demand-note__compare-icon {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+   width: 28px;
+   line-height: 1;
+   font-size: 1.2rem;
+   margin-top: 2px;
+}
