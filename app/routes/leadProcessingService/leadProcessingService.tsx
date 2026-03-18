@@ -22,7 +22,7 @@ function leadProcessingService() {
          <Hero
             image={heroImage}
             showMetrics={false}
-            subTitle="Прозвон анкет — быстро и профессионально"
+            subTitle="Прозвон анкет - быстро и профессионально"
          >
             <h1 className="hero__title">
                Обработка лидов
@@ -33,7 +33,7 @@ function leadProcessingService() {
          <ServiceDescription
             title={
                <>
-                  Каждый отклик на вакансию —{" "}
+                  Каждый отклик на вакансию -{" "}
                   <span className="highlight">это шанс</span>
                </>
             }

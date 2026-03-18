@@ -15,7 +15,7 @@ describe("Recruitment funnel offer component", () => {
                headingIntro="Что вы получаете?"
                heading={
                   <>
-                     Полная воронка под ключ — от
+                     Полная воронка под ключ - от
                      <span className="highlight"> лида</span> до
                      <span className="highlight"> трудоустройства</span>
                   </>
@@ -40,7 +40,7 @@ describe("Recruitment funnel offer component", () => {
                headingIntro="Что вы получаете?"
                heading={
                   <>
-                     Полная воронка под ключ — от
+                     Полная воронка под ключ - от
                      <span className="highlight"> лида</span> до
                      <span className="highlight"> трудоустройства</span>
                   </>

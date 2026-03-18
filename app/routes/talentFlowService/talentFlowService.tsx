@@ -45,7 +45,7 @@ export default function talentFlowService() {
          <Hero
             image={heroImage}
             showMetrics={false}
-            subTitle="Приводим целевых кандидатов на ваши вакансии. Без шума, без воды — только валидные отклики."
+            subTitle="Приводим целевых кандидатов на ваши вакансии. Без шума, без воды - только валидные отклики."
          >
             <h1 className="hero__title">
                Генерация{" "}
@@ -58,7 +58,7 @@ export default function talentFlowService() {
          <ServiceDescription
             title={
                <>
-                  Мы не размещаем объявления — мы строим
+                  Мы не размещаем объявления - мы строим
                   <span className="highlight"> digital-воронки </span>найма
                </>
             }
@@ -74,7 +74,7 @@ export default function talentFlowService() {
             headingIntro="Что вы получаете?"
             heading={
                <>
-                  Полная воронка под ключ — от
+                  Полная воронка под ключ - от
                   <span className="highlight"> лида</span> до
                   <span className="highlight"> трудоустройства</span>
                </>
@@ -107,7 +107,7 @@ export default function talentFlowService() {
                "Нужен результат, а не «много просмотров»",
             ]}
             sectionBottom={{
-               heading: "Там, где сложно — приходим мы!",
+               heading: "Там, где сложно - приходим мы!",
                text: "Массовый подбор, регионы, текучка. Ищем не просмотры, а людей.",
             }}
          />
@@ -149,7 +149,7 @@ export default function talentFlowService() {
                      suffix: "%",
                   },
                   description:
-                     "Достигли 85% релевантных откликов при массовом подборе в федеральную сеть ритейла — без «мусорного трафика»",
+                     "Достигли 85% релевантных откликов при массовом подборе в федеральную сеть ритейла - без «мусорного трафика»",
                },
             ]}
          />

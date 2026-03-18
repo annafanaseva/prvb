@@ -48,8 +48,8 @@ function CaseAvitoAds() {
                </>
             }
             sectionList={[
-               "Avito Pro — управление вакансиями",
-               "Avito Ads — таргетированная реклама",
+               "Avito Pro - управление вакансиями",
+               "Avito Ads - таргетированная реклама",
             ]}
          />
 
@@ -62,7 +62,6 @@ function CaseAvitoAds() {
             </h5>
          </div>
 
-         {/* Avito Pro */}
          <section className="feat">
             <div className="feat__wrap">
                <div className="feat__media">
@@ -76,12 +75,12 @@ function CaseAvitoAds() {
 
                <div className="feat__content">
                   <h2 className="feat__title">
-                     <span className="highlight">Avito Pro</span> — управление
+                     <span className="highlight">Avito Pro</span> - управление
                      размещениями
                   </h2>
 
                   <p className="feat__lead">
-                     Avito Pro — это профессиональный кабинет работодателя. Он
+                     Avito Pro - это профессиональный кабинет работодателя. Он
                      позволяет:
                   </p>
 
@@ -115,7 +114,7 @@ function CaseAvitoAds() {
             <h5 className="intro__text">
                <span className="intro__space" />
                <span className="highlight">
-                  Для массового рекрутмента это база — без него сложно управлять
+                  Для массового рекрутмента это база - без него сложно управлять
                   десятками и сотнями вакансий.
                </span>
             </h5>
@@ -141,7 +140,7 @@ function CaseAvitoAds() {
                         <p className="note__p">
                            То есть работает принцип:
                            <span className="note__quote">
-                              «Есть поисковый спрос — есть показы».
+                              «Есть поисковый спрос - есть показы».
                            </span>
                         </p>
                      </div>
@@ -164,8 +163,8 @@ function CaseAvitoAds() {
                      sectionTitle="Комментарий эксперта"
                      sectionImage={expertImg}
                      alt="Анна Карабаджак"
-                     comment="«Avito Pro отлично решает операционные задачи — управление объемом вакансий, автоматизация. Но он не расширяет аудиторию сам по себе. Он работает внутри существующего спроса»."
-                     name="— Анна Карабаджак, специалист по таргетированной рекламе"
+                     comment="«Avito Pro отлично решает операционные задачи - управление объемом вакансий, автоматизация. Но он не расширяет аудиторию сам по себе. Он работает внутри существующего спроса»."
+                     name="- Анна Карабаджак, специалист по таргетированной рекламе"
                   />
                </div>
             </div>
@@ -185,12 +184,12 @@ function CaseAvitoAds() {
 
                <div className="feat__content">
                   <h2 className="feat__title">
-                     <span className="highlight">Avito Ads</span> — работа с
+                     <span className="highlight">Avito Ads</span> - работа с
                      аудиторией кандидатов
                   </h2>
 
                   <p className="feat__lead">
-                     Avito Ads — это рекламный инструмент внутри экосистемы
+                     Avito Ads - это рекламный инструмент внутри экосистемы
                      Avito. В отличие от Pro, он позволяет:
                   </p>
 
@@ -228,7 +227,7 @@ function CaseAvitoAds() {
 
                      <p className="note__p">
                         <span className="note__quote">
-                           «Есть аудитория — мы её находим и показываем
+                           «Есть аудитория - мы её находим и показываем
                            вакансию».
                         </span>
                      </p>
@@ -240,7 +239,7 @@ function CaseAvitoAds() {
                      <ul className="note__list">
                         <li className="note__li">
                            <CheckIcon />
-                           часть кандидатов — пассивные
+                           часть кандидатов - пассивные
                         </li>
                         <li className="note__li">
                            <CheckIcon />
@@ -258,7 +257,7 @@ function CaseAvitoAds() {
                      sectionImage={expertImg}
                      alt="Анна Карабаджак"
                      comment="«Через Avito Ads мы можем выйти за рамки поисковой выдачи. Это позволяет привлекать не только тех, кто уже ищет работу, но и тех, кто готов рассмотреть предложение при правильной подаче»."
-                     name="— Анна Карабаджак, специалист по таргетированной рекламе"
+                     name="- Анна Карабаджак, специалист по таргетированной рекламе"
                   />
                </div>
             </div>
@@ -347,14 +346,14 @@ function CaseAvitoAds() {
                         <li className="note__li">
                            <span className="note__emoji">📌</span>
                            <span>
-                              <strong>Avito Pro</strong> — для управления всеми
+                              <strong>Avito Pro</strong> - для управления всеми
                               вакансиями и обработки откликов
                            </span>
                         </li>
                         <li className="note__li">
                            <span className="note__emoji">🎯</span>
                            <span>
-                              <strong>Avito Ads</strong> — для масштабирования и
+                              <strong>Avito Ads</strong> - для масштабирования и
                               привлечения дополнительного потока
                            </span>
                         </li>
@@ -366,7 +365,7 @@ function CaseAvitoAds() {
                      sectionImage={expertImg}
                      alt="Анна Карабаджак"
                      comment="«Когда мы комбинируем Avito Pro и Avito Ads, мы получаем управляемую воронку: охват → клики → отклики → найм. И можем влиять на стоимость отклика и скорость закрытия вакансий»."
-                     name="— Анна Карабаджак, специалист по таргетированной рекламе"
+                     name="- Анна Карабаджак, специалист по таргетированной рекламе"
                   />
                </div>
             </div>
@@ -377,9 +376,9 @@ function CaseAvitoAds() {
             subTitle={
                <>
                   Если использовать только{" "}
-                  <span className="highlight">Avito Pro</span> — вы зависите от
+                  <span className="highlight">Avito Pro</span> - вы зависите от
                   текущего спроса. Если подключать{" "}
-                  <span className="highlight">Avito Ads</span> — вы можете
+                  <span className="highlight">Avito Ads</span> - вы можете
                   влиять на объем входящего потока.
                </>
             }
@@ -403,7 +402,7 @@ function CaseAvitoAds() {
 
          <ContactUs
             title="Обсудим?"
-            subtitle="Оставьте заявку на консультацию — и наша команда предложит персональное решение!"
+            subtitle="Оставьте заявку на консультацию - и наша команда предложит персональное решение!"
          />
       </div>
    );

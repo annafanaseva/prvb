@@ -11,7 +11,7 @@ describe("Service description block", () => {
             <ServiceDescription
                title={
                   <>
-                     Мы не размещаем объявления — мы строим
+                     Мы не размещаем объявления - мы строим
                      <span className="highlight"> digital-воронки </span>найма
                   </>
                }
@@ -39,7 +39,7 @@ describe("Service description block", () => {
             <ServiceDescription
                title={
                   <>
-                     Мы не размещаем объявления — мы строим
+                     Мы не размещаем объявления - мы строим
                      <span className="highlight"> digital-воронки </span>
                      найма
                   </>
@@ -68,7 +68,7 @@ describe("Service description block", () => {
             <ServiceDescription
                title={
                   <>
-                     Мы не размещаем объявления — мы строим
+                     Мы не размещаем объявления - мы строим
                      <span className="highlight"> digital-воронки </span>
                      найма
                   </>

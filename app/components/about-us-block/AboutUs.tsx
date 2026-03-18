@@ -130,7 +130,7 @@ function AboutUs() {
                   className="about-us-block__heading-text"
                   data-testid="about-us-heading-text"
                >
-                  Мы — digital-агентство, работающее на стыке{" "}
+                  Мы - digital-агентство, работающее на стыке{" "}
                   <span className="highlight">HR </span>и
                   <span className="highlight"> маркетинга</span>
                </h4>
