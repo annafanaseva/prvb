@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router";
-import rabotnikImage from "/rabotnik-logo.webp";
+import rabotnikImage from "/logo.svg";
 import Button from "../button/Button";
 import "./our-platform.css";
 
