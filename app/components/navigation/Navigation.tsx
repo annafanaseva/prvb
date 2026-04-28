@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import Button from "../button/Button";
 import MobileMenu from "../mobile-menu/MobileMenu";
-import logo from "/logo.svg";
+import logo from "/rabotnik-logo.webp";
 import "./navigation.css";
 
 const navigationsList = [

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 import Button from "../button/Button";
-import logo from "/logo.svg";
+import logo from "/rabotnik-logo.webp";
 import "./footer.css";
 
 function Footer() {
