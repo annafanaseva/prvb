@@ -1,3 +1,13 @@
 User-agent: *
-Disallow:
+Allow: /_next/static/
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+
+Disallow: /admin/
+Disallow: /api/
+Disallow: /thank-you/
+Disallow: /*?*
+
+Host: https://prvb.ru
 Sitemap: https://prvb.ru/sitemap.xml
