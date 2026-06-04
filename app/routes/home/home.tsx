@@ -22,6 +22,19 @@ const preloadServiceListImages = servicesList.map((list) => {
    };
 });
 
+export const meta: Route.MetaFunction = () => {
+   return [
+      {
+         title: "HR-лиды и трафик кандидатов для вакансий — агентство лидогенерации",
+      },
+      {
+         name: "description",
+         content:
+            "Помогаем компаниям закрывать вакансии через трафик кандидатов: таргет, контекст, рассылки, чат-боты и интеграции с HRM-системами.",
+      },
+   ];
+};
+
 export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
    { rel: "preload", href: howWeWorkImage, as: "image" },

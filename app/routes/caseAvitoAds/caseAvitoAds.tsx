@@ -4,6 +4,7 @@ import HowWeWork from "~/components/how-we-work/HowWeWork";
 import ContactUs from "~/components/contact-us/ContactUs";
 import ServiceDescription from "~/components/service-description/ServiceDescription";
 import ExpertComment from "~/components/expert-comment/expertComment";
+import type { Route } from "./+types/caseAvitoAds";
 
 import heroImage from "./hero-image.png";
 import leadGeneration from "./lead-generation.jpg";
@@ -12,6 +13,19 @@ import avitoAds from "./avito-ads.jpg";
 import expertImg from "./expert.jpg";
 
 import "./сase-avito-ads.css";
+
+export const meta: Route.MetaFunction = () => {
+   return [
+      {
+         title: "Avito Pro и Avito Ads для рекрутмента | Сравнение инструментов",
+      },
+      {
+         name: "description",
+         content:
+            "Сравнение Avito Pro и Avito Ads для подбора персонала. Узнайте, какой инструмент подходит для массового найма, рекламы вакансий и привлечения кандидатов.",
+      },
+   ];
+};
 
 function CaseAvitoAds() {
    return (

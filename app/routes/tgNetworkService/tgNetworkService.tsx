@@ -17,6 +17,19 @@ export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
 ];
 
+export const meta: Route.MetaFunction = () => {
+   return [
+      {
+         title: "Реклама вакансий в Telegram-каналах Rabotnik",
+      },
+      {
+         name: "description",
+         content:
+            "Размещение вакансий в Telegram-каналах Rabotnik для подбора персонала. Охват аудитории по городам, прямой контакт с кандидатами и отклики на вакансии.",
+      },
+   ];
+};
+
 function tgNetworkService() {
    return (
       <div className="tg-network-service">

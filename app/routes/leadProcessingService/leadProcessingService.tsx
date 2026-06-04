@@ -16,6 +16,19 @@ export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
 ];
 
+export const meta: Route.MetaFunction = () => {
+   return [
+      {
+         title: "Обработка откликов кандидатов и прозвон анкет за 15 минут",
+      },
+      {
+         name: "description",
+         content:
+            "Не даём лидам остыть: звоним кандидатам в первые 15 минут, проверяем релевантность, мотивацию и готовность к собеседованию. Передаём валидные лиды в HR.",
+      },
+   ];
+};
+
 function leadProcessingService() {
    return (
       <div className="lead-processing-page">

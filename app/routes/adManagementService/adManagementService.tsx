@@ -18,6 +18,19 @@ export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
 ];
 
+export const meta: Route.MetaFunction = () => {
+   return [
+      {
+         title: "Ведение кампаний под ключ",
+      },
+      {
+         name: "description",
+         content:
+            "Запускаем рекламу вакансий за 24 часа: привлекаем релевантных кандидатов через VK, Telegram, контекст и ретаргетинг.",
+      },
+   ];
+};
+
 function adManagementService() {
    return (
       <div className="ad-management-service">

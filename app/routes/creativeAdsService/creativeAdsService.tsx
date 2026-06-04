@@ -18,6 +18,19 @@ export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
 ];
 
+export const meta: Route.MetaFunction = () => {
+   return [
+      {
+         title: "Креативы для рекламы вакансий | HR-рекламные материалы под ключ",
+      },
+      {
+         name: "description",
+         content:
+            "Разрабатываем креативные концепции и рекламные материалы для подбора персонала. Баннеры, сторис, тексты, видео и офлайн-носители для привлечения кандидатов.",
+      },
+   ];
+};
+
 function creativeAdsService() {
    return (
       <div className="creative-ads-service">

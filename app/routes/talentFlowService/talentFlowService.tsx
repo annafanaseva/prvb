@@ -16,6 +16,19 @@ export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
 ];
 
+export const meta: Route.MetaFunction = () => {
+   return [
+      {
+         title: "Генерация кадрового трафика | HR-маркетинг под ключ",
+      },
+      {
+         name: "description",
+         content:
+            "Привлекаем целевых кандидатов через digital-каналы, рекламу и автоматизацию. Генерация кадрового трафика, массовый подбор персонала и валидные отклики для ваших вакансий.",
+      },
+   ];
+};
+
 const recruitmentFunnelList = [
    "Релевантные лиды по согласованным критериям",
    "Экономию времени рекрутера",

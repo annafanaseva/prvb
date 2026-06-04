@@ -18,6 +18,19 @@ export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
 ];
 
+export const meta: Route.MetaFunction = () => {
+   return [
+      {
+         title: "Лендинги для вакансий и HR-сайты, которые приводят кандидатов",
+      },
+      {
+         name: "description",
+         content:
+            "Создаём посадочные страницы для вакансий и HR-сайты под ключ. Больше откликов, ниже стоимость кандидата, интеграция с CRM и быстрый запуск от 1 дня.",
+      },
+   ];
+};
+
 function landingService() {
    return (
       <div className="landing-service-page">

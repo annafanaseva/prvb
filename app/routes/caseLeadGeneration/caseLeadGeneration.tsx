@@ -7,6 +7,20 @@ import heroImage from "./hero-image.png";
 import infoImage from "./info-image.webp";
 import leadGeneration from "./lead-generation.jpg";
 import Interview from "~/components/interview/Interview";
+import type { Route } from "./+types/caseLeadGeneration";
+
+export const meta: Route.MetaFunction = () => {
+   return [
+      {
+         title: "Кадровая лидогенерация для подбора персонала | Интервью эксперта",
+      },
+      {
+         name: "description",
+         content:
+            "Что такое кадровая лидогенерация и почему компании используют HR-маркетинг для подбора персонала. Практические советы и мнение эксперта.",
+      },
+   ];
+};
 
 function CaseLeadGeneration() {
    return (
