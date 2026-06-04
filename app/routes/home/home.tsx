@@ -48,7 +48,7 @@ export default function Home() {
          <Hero
             image={heroImage}
             showMetrics={true}
-            subTitle="Помогаем вовремя закрывать вакансии "
+            subTitle="Помогаем вовремя закрывать вакансии"
          >
             <h1 className="hero__title">
                Агентство генерации

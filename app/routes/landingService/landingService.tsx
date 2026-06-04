@@ -50,7 +50,7 @@ function landingService() {
             }
             subTitle={
                <>
-                   Мы создаём <span className="highlight">лендинги</span> под
+                  Мы создаём <span className="highlight">лендинги</span> под
                   вакансии, которые повышают конверсию и превращают посетителей
                   в <span className="highlight">реальных кандидатов</span>
                </>
