@@ -27,6 +27,11 @@ export const meta: Route.MetaFunction = () => {
          content:
             "Размещение вакансий в Telegram-каналах Rabotnik для подбора персонала. Охват аудитории по городам, прямой контакт с кандидатами и отклики на вакансии.",
       },
+      {
+         name: "keywords",
+         content:
+            "Telegram вакансии, размещение вакансий в Telegram, Telegram каналы Rabotnik, подбор персонала через Telegram, поиск сотрудников, рекрутинг в Telegram, реклама вакансий",
+      },
    ];
 };
 
