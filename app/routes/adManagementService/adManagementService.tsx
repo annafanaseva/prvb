@@ -10,8 +10,10 @@ import ContactUs from "~/components/contact-us/ContactUs";
 import Faq from "~/components/faq/Faq";
 import { faqList } from "./faqList.";
 import heroImage from "./hero-image.jpg";
-import howWeWorkImage from "./how-we-work.jpg";
 import howWeWork2Image from "./how-we-work2.jpg";
+import target from "./target.png";
+import contekstnaya from "./contekstnaya.png";
+import posting from "./posting.png";
 import type { Route } from "./+types/adManagementService";
 
 export const links: Route.LinksFunction = () => [
@@ -81,31 +83,68 @@ function adManagementService() {
             ]}
          />
          <HowWeWork
-            sectionImage={howWeWorkImage}
+            sectionImage={contekstnaya}
             sectionHeading={
                <>
-                  Контекстная реклама{" "}
-                  <span className="highlight">с результатом</span>
+                  <span className="highlight">Контекстная реклама </span>
+                  для подбора персонала
                </>
             }
-            sectionParagraph={
-               <>
-                  <span>
-                     Первые результаты увидите уже через 1-3 дня после запуска
-                     проекта
-                  </span>
-                  <span>
-                     В команде только опытные сертифицированные специалисты
-                  </span>
-                  <span>
-                     Объявления будут показаны только тем пользователям, которые
-                     уже ищут ваш товар или услугу.
-                  </span>
-               </>
-            }
+            sectionSubHeading="Привлекаем кандидатов, которые уже ищут работу в поисковых системах. Настраиваем рекламные кампании в поиске и рекламных сетях, оптимизируем стоимость отклика и контролируем качество заявок."
+            sectionList={[
+               "Анализ вакансий и целевой аудитории",
+               "Подбор ключевых запросов",
+               "Создание объявлений",
+               "Настройка аналитики",
+               "Оптимизация ставок и бюджета",
+               "Ежедневный контроль эффективности",
+            ]}
             sectionBottom={{
-               heading: "Приведём клиентов быстро",
-               text: "Точечная настройка рекламы и контроль бюджета - каждый клик работает на вашу прибыль",
+               heading: "Больше релевантных откликов",
+               text: "Контекстная реклама помогает находить кандидатов, которые уже ищут работу, сокращая время закрытия вакансий и стоимость найма",
+            }}
+         />
+         <HowWeWork
+            sectionImage={target}
+            sectionHeading={
+               <>
+                  <span className="highlight">Таргетированная реклама </span>
+                  вакансий
+               </>
+            }
+            sectionSubHeading="Находим потенциальных кандидатов по интересам, профессии, географии и поведению в социальных сетях."
+            sectionList={[
+               "Сегментация аудитории",
+               "Создание рекламных креативов",
+               "Настройка рекламных кабинетов",
+               "Ретаргетинг",
+               "A/B тестирование объявлений",
+               "Аналитика и отчётность",
+            ]}
+            sectionBottom={{
+               heading: "Расширяем охват кандидатов",
+               text: "Доставляем ваши вакансии нужной аудитории в социальных сетях, привлекая специалистов, которые могли бы не увидеть объявление на job-площадках",
+            }}
+         />
+         <HowWeWork
+            sectionImage={posting}
+            sectionHeading={
+               <>
+                  <span className="highlight">Постинг</span> в социальных сетях
+               </>
+            }
+            sectionSubHeading="Размещаем вакансии и HR-контент в социальных сетях для формирования постоянного потока кандидатов и усиления HR-бренда компании."
+            sectionList={[
+               "Подготовка контент-плана",
+               "Оформление вакансий",
+               "Публикация постов",
+               "Создание сторис и клипов",
+               "Работа с комментариями",
+               "Анализ вовлечённости",
+            ]}
+            sectionBottom={{
+               heading: "Усиливайте HR-бренд компании",
+               text: "Регулярный контент помогает повысить доверие к работодателю, увеличить охват вакансий и сформировать постоянный поток заинтересованных кандидатов",
             }}
          />
          <ServiceOverview

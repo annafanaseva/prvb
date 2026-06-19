@@ -47,6 +47,7 @@ export function meta({}: Route.MetaArgs) {
       },
    ];
 }
+
 export function Layout({ children }: { children: React.ReactNode }) {
    return (
       <html lang="ru">
@@ -89,6 +90,7 @@ function YandexMetrika() {
                (m[i].a = m[i].a || []).push(arguments);
             };
          m[i].l = Date.now();
+
          for (let j = 0; j < e.scripts.length; j++) {
             if (e.scripts[j].src === r) return;
          }
@@ -117,7 +119,6 @@ function YandexMetrika() {
       if (typeof window === "undefined") return;
       const ym = (window as any).ym;
       if (!ym) return;
-
       const url = location.pathname + location.search + location.hash;
       ym(YM_ID, "hit", url, { referer: document.referrer });
    }, [location]);
@@ -133,6 +134,11 @@ function YandexMetrika() {
          </div>
       </noscript>
    );
+}
+
+// Just render any componet
+export function HydrateFallback() {
+   return <div>Loading...</div>;
 }
 
 export default function App() {
