@@ -43,7 +43,6 @@ export const meta: Route.MetaFunction = () => {
 export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
    { rel: "preload", href: howWeWorkImage, as: "image" },
-
    ...preloadServiceListImages,
 ];
 

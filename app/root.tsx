@@ -63,10 +63,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
          </head>
          <body>
             {children}
-            {/* Yandex.Metrika counter */}
-            <YandexMetrika />
-            {/* /Yandex.Metrika counter */}
             <ScrollRestoration />
+
+            <YandexMetrika />
             <Scripts />
          </body>
       </html>
@@ -106,7 +105,6 @@ function YandexMetrika() {
          "https://mc.yandex.ru/metrika/tag.js",
          "ym"
       );
-
       (window as any).ym(YM_ID, "init", {
          webvisor: true,
          clickmap: true,
