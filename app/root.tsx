@@ -37,16 +37,16 @@ export const links: Route.LinksFunction = () => [
    },
 ];
 
-export function meta({}: Route.MetaArgs) {
-   return [
-      { title: "Подбор персонала и кадровые решения | Правильный выбор" },
-      {
-         name: "description",
-         content:
-            "Настраиваем рекламу вакансий, продвигаем карьерный сайт и привлекаем кандидатов. Результат — поток релевантных лидов.",
-      },
-   ];
-}
+// export function meta({}: Route.MetaArgs) {
+//    return [
+//       { title: "Подбор персонала и кадровые решения | Правильный выбор" },
+//       {
+//          name: "description",
+//          content:
+//             "Настраиваем рекламу вакансий, продвигаем карьерный сайт и привлекаем кандидатов. Результат — поток релевантных лидов.",
+//       },
+//    ];
+// }
 
 export function Layout({ children }: { children: React.ReactNode }) {
    return (
