@@ -1,27 +1,23 @@
-import React from "react";
 import PrivacyPolicy from "~/components/privacy-policy/PrivacyPolicy";
-import type { Route } from "./+types/privacyPolicy";
-
-export const meta: Route.MetaFunction = () => {
-   return [
-      {
-         title: "Политика конфиденциальности",
-      },
-      {
-         name: "description",
-         content:
-            "Политика конфиденциальности и обработки персональных данных.",
-      },
-      {
-         name: "keywords",
-         content:
-            "политика конфиденциальности, персональные данные, обработка персональных данных",
-      },
-   ];
-};
 
 function PrivacyPolicyPage() {
-   return <PrivacyPolicy />;
+   return (
+      <div>
+         {/* Meta */}
+         <title>Политика конфиденциальности</title>
+         <meta property="og:title" content="Политика конфиденциальности" />
+         <meta
+            name="description"
+            content="Политика конфиденциальности и обработки персональных данных."
+         />
+         <meta
+            name="keywords"
+            content="политика конфиденциальности, персональные данные, обработка персональных данных"
+         />
+         {/* Content */}
+         <PrivacyPolicy />;
+      </div>
+   );
 }
 
 export default PrivacyPolicyPage;

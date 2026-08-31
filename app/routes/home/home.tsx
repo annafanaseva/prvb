@@ -22,24 +22,6 @@ const preloadServiceListImages = servicesList.map((list) => {
    };
 });
 
-export const meta: Route.MetaFunction = () => {
-   return [
-      {
-         title: "HR-лиды и трафик кандидатов для вакансий — агентство лидогенерации",
-      },
-      {
-         name: "description",
-         content:
-            "Помогаем компаниям закрывать вакансии через трафик кандидатов: таргет, контекст, рассылки, чат-боты и интеграции с HRM-системами.",
-      },
-      {
-         name: "keywords",
-         content:
-            "кадровый трафик, генерация кадрового трафика, подбор персонала, HR-маркетинг, привлечение кандидатов, рекрутинг, массовый подбор персонала, кадровый маркетинг",
-      },
-   ];
-};
-
 export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
    { rel: "preload", href: howWeWorkImage, as: "image" },
@@ -48,42 +30,65 @@ export const links: Route.LinksFunction = () => [
 
 export default function Home() {
    return (
-      <div className="home-page">
-         <Hero
-            image={heroImage}
-            showMetrics={true}
-            subTitle="Помогаем вовремя закрывать вакансии"
-         >
-            <h1 className="hero__title">
-               Агентство генерации
-               <br />
-               <span className="highlight">трафика кандидатов</span>
-            </h1>
-         </Hero>
-         <HowWeWork
-            sectionImage={howWeWorkImage}
-            sectionTitle="Как мы работаем ?"
-            sectionHeading="Как мы работаем, чтобы наполнить вашу HR-воронку:"
-            sectionSubHeading="Все лиды попадают в ваш Личный кабинет или интегрируются в HRM-систему"
-            sectionList={[
-               "Используем 5+ каналов одновременно (таргет, контекст, рассылки: whatsapp, sms, e-mail, голосовые и чат-боты)",
-               "Настраиваем персонализированные кампании под вакансию",
-               "Охватываем даже тех, кто не ищет работу активно",
-            ]}
-            sectionBottom={{
-               heading: "Мы работаем не с резюме, a с историями!",
-               text: "За каждым откликом - человек. За каждой вакансией - живой бизнес. Мы соединяем одно с другим так, чтобы получался результат - честный, точный, вовремя",
-            }}
+      <div>
+         {/* Meta */}
+         <title>
+            HR-лиды и трафик кандидатов для вакансий — агентство лидогенерации
+         </title>
+         <meta
+            property="og:title"
+            content="HR-лиды и трафик кандидатов для вакансий — агентство лидогенерации"
          />
-         <MetricsBlock />
-         <ServiceListBlock />
-         <OurPlatform />
-         <div id="about-us">
-            <AboutUs />
+         <meta
+            name="description"
+            content="Помогаем компаниям закрывать вакансии через трафик кандидатов: таргет, контекст, рассылки, чат-боты и интеграции с HRM-системами."
+         />
+         <meta
+            name="keywords"
+            content="кадровый трафик, генерация кадрового трафика, подбор персонала, HR-маркетинг, привлечение кандидатов, рекрутинг, массовый подбор персонала, кадровый маркетинг"
+         />
+
+         {/* Content */}
+         <div className="home-page">
+            <Hero
+               image={heroImage}
+               showMetrics={true}
+               subTitle="Помогаем вовремя закрывать вакансии"
+            >
+               <h1 className="hero__title">
+                  Агентство генерации
+                  <br />
+                  <span className="highlight">трафика кандидатов</span>
+               </h1>
+            </Hero>
+            <HowWeWork
+               sectionImage={howWeWorkImage}
+               sectionTitle="Как мы работаем ?"
+               sectionHeading="Как мы работаем, чтобы наполнить вашу HR-воронку:"
+               sectionSubHeading="Все лиды попадают в ваш Личный кабинет или интегрируются в HRM-систему"
+               sectionList={[
+                  "Используем 5+ каналов одновременно (таргет, контекст, рассылки: whatsapp, sms, e-mail, голосовые и чат-боты)",
+                  "Настраиваем персонализированные кампании под вакансию",
+                  "Охватываем даже тех, кто не ищет работу активно",
+               ]}
+               sectionBottom={{
+                  heading: "Мы работаем не с резюме, a с историями!",
+                  text: "За каждым откликом - человек. За каждой вакансией - живой бизнес. Мы соединяем одно с другим так, чтобы получался результат - честный, точный, вовремя",
+               }}
+            />
+            <MetricsBlock />
+            <ServiceListBlock />
+            <OurPlatform />
+            <div id="about-us">
+               <AboutUs />
+            </div>
+            <ContactUs
+               title="Готовы подключиться?"
+               subtitle="Оставьте заявку"
+            />
+            <Faq faqList={faqList} />
+            <TextSlider />
          </div>
-         <ContactUs title="Готовы подключиться?" subtitle="Оставьте заявку" />
-         <Faq faqList={faqList} />
-         <TextSlider />
       </div>
    );
 }

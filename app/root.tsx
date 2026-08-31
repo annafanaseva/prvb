@@ -37,17 +37,6 @@ export const links: Route.LinksFunction = () => [
    },
 ];
 
-// export function meta({}: Route.MetaArgs) {
-//    return [
-//       { title: "Подбор персонала и кадровые решения | Правильный выбор" },
-//       {
-//          name: "description",
-//          content:
-//             "Настраиваем рекламу вакансий, продвигаем карьерный сайт и привлекаем кандидатов. Результат — поток релевантных лидов.",
-//       },
-//    ];
-// }
-
 export function Layout({ children }: { children: React.ReactNode }) {
    return (
       <html lang="ru">
@@ -64,7 +53,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
          <body>
             {children}
             <ScrollRestoration />
-
             <YandexMetrika />
             <Scripts />
          </body>
@@ -72,15 +60,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
    );
 }
 
-const YM_ID = 101444747;
-
 function YandexMetrika() {
+   const YM_ID = 101444747;
    const location = useLocation();
 
    useEffect(() => {
       if (typeof window === "undefined") return;
-
-      if ((window as any).ym) return;
 
       (function (m: any, e: any, t: any, r: any, i: any, k?: any, a?: any) {
          m[i] =
@@ -93,6 +78,7 @@ function YandexMetrika() {
          for (let j = 0; j < e.scripts.length; j++) {
             if (e.scripts[j].src === r) return;
          }
+
          k = e.createElement(t);
          a = e.getElementsByTagName(t)[0];
          k.async = 1;
@@ -105,18 +91,17 @@ function YandexMetrika() {
          "https://mc.yandex.ru/metrika/tag.js",
          "ym"
       );
+
       (window as any).ym(YM_ID, "init", {
          webvisor: true,
          clickmap: true,
          accurateTrackBounce: true,
          trackLinks: true,
       });
-   }, []);
 
-   useEffect(() => {
-      if (typeof window === "undefined") return;
       const ym = (window as any).ym;
       if (!ym) return;
+
       const url = location.pathname + location.search + location.hash;
       ym(YM_ID, "hit", url, { referer: document.referrer });
    }, [location]);
@@ -132,11 +117,6 @@ function YandexMetrika() {
          </div>
       </noscript>
    );
-}
-
-// Just render any componet
-export function HydrateFallback() {
-   return <div>Loading...</div>;
 }
 
 export default function App() {
@@ -163,6 +143,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
       details = error.message;
       stack = error.stack;
    }
+
    return (
       <main className="">
          <h1>{message}</h1>

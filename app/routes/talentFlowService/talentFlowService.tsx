@@ -16,24 +16,6 @@ export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
 ];
 
-export const meta: Route.MetaFunction = () => {
-   return [
-      {
-         title: "Генерация кадрового трафика | HR-маркетинг под ключ",
-      },
-      {
-         name: "description",
-         content:
-            "Привлекаем целевых кандидатов через digital-каналы, рекламу и автоматизацию. Генерация кадрового трафика, массовый подбор персонала и валидные отклики для ваших вакансий.",
-      },
-      {
-         name: "keywords",
-         content:
-            "генерация кадрового трафика, кадровый трафик, лиды на вакансии, привлечение кандидатов, массовый подбор персонала, HR-маркетинг, рекрутинг, digital-рекрутинг",
-      },
-   ];
-};
-
 const recruitmentFunnelList = [
    "Релевантные лиды по согласованным критериям",
    "Экономию времени рекрутера",
@@ -59,122 +41,139 @@ const workStages = [
 
 export default function talentFlowService() {
    return (
-      <div className="home-page">
-         <Hero
-            image={heroImage}
-            showMetrics={false}
-            subTitle="Приводим целевых кандидатов на ваши вакансии. Без шума, без воды - только валидные отклики."
-         >
-            <h1 className="hero__title">
-               Генерация{" "}
-               <span className="highlight">
-                  кадрового
-                  <br /> трафика
-               </span>
-            </h1>
-         </Hero>
-         <ServiceDescription
-            title={
-               <>
-                  Мы не размещаем объявления - мы строим
-                  <span className="highlight"> digital-воронки </span>найма
-               </>
-            }
-            subTitle={
-               <>
-                  Мы знаем, как привлечь даже тех, кто сейчас не в поисках или
-                  работает у ваших конкурентов
-               </>
-            }
+      <div>
+         {/* Meta */}
+         <title>Генерация кадрового трафика | HR-маркетинг под ключ</title>
+         <meta
+            property="og:title"
+            content="Генерация кадрового трафика | HR-маркетинг под ключ"
          />
-         <RecruitmentFunnelOffer
-            lists={recruitmentFunnelList}
-            headingIntro="Что вы получаете?"
-            heading={
-               <>
-                  Полная воронка под ключ - от
-                  <span className="highlight"> лида</span> до
-                  <span className="highlight"> трудоустройства</span>
-               </>
-            }
+         <meta
+            name="description"
+            content="Привлекаем целевых кандидатов через digital-каналы, рекламу и автоматизацию. Генерация кадрового трафика, массовый подбор персонала и валидные отклики для ваших вакансий."
          />
-         <ServiceOverview
-            hrefBox1="#performance-metrics"
-            boxTwoTitle="Что такое генерация кадрового трафика?"
-            boxTwoText="Это не просто реклама вакансии. Это система привлечения кандидатов по заданным критериям через digital-каналы, автоматизацию и обработку откликов"
-            boxThreeText="Мы настраиваем поток валидных лидов с максимальным охватом и персонализацией под специфику вашего бизнеса"
+         <meta
+            name="keywords"
+            content="генерация кадрового трафика, кадровый трафик, лиды на вакансии, привлечение кандидатов, массовый подбор персонала, HR-маркетинг, рекрутинг, digital-рекрутинг"
          />
-         <ChannelOverview
-            title="Используемые каналы:"
-            list={channelOverviewList}
-         />
-         <WorkStage list={workStages} />
-         <HowWeWork
-            sectionImage={howWeWorkImage}
-            sectionHeading={
-               <>
-                  <span className="highlight">Для кого </span>подходит услуга
-               </>
-            }
-            sectionSubHeading="Где наш подход работает лучше всего?"
-            sectionList={[
-               "Массовый подбор: логистика, ритейл, производство, склады",
-               "Региональные и вахтовые вакансии",
-               "Высокая текучесть и дефицитные позиции",
-               "Низкая эффективность с Avito, HH и др.",
-               "Нужен результат, а не «много просмотров»",
-            ]}
-            sectionBottom={{
-               heading: "Там, где сложно - приходим мы!",
-               text: "Массовый подбор, регионы, текучка. Ищем не просмотры, а людей.",
-            }}
-         />
-         <PerformanceMetrics
-            sectionTitle={
-               <>
-                  Наши <span className="highlight">кейсы</span>
-               </>
-            }
-            metrics={[
-               {
-                  label: "Складские рабочие",
-                  value: {
-                     initial: "100",
-                     countBy: "50",
-                     countEnd: "1200",
-                     suffix: "+",
+         {/* Content */}
+         <div className="home-page">
+            <Hero
+               image={heroImage}
+               showMetrics={false}
+               subTitle="Приводим целевых кандидатов на ваши вакансии. Без шума, без воды - только валидные отклики."
+            >
+               <h1 className="hero__title">
+                  Генерация{" "}
+                  <span className="highlight">
+                     кадрового
+                     <br /> трафика
+                  </span>
+               </h1>
+            </Hero>
+            <ServiceDescription
+               title={
+                  <>
+                     Мы не размещаем объявления - мы строим
+                     <span className="highlight"> digital-воронки </span>найма
+                  </>
+               }
+               subTitle={
+                  <>
+                     Мы знаем, как привлечь даже тех, кто сейчас не в поисках
+                     или работает у ваших конкурентов
+                  </>
+               }
+            />
+            <RecruitmentFunnelOffer
+               lists={recruitmentFunnelList}
+               headingIntro="Что вы получаете?"
+               heading={
+                  <>
+                     Полная воронка под ключ - от
+                     <span className="highlight"> лида</span> до
+                     <span className="highlight"> трудоустройства</span>
+                  </>
+               }
+            />
+            <ServiceOverview
+               hrefBox1="#performance-metrics"
+               boxTwoTitle="Что такое генерация кадрового трафика?"
+               boxTwoText="Это не просто реклама вакансии. Это система привлечения кандидатов по заданным критериям через digital-каналы, автоматизацию и обработку откликов"
+               boxThreeText="Мы настраиваем поток валидных лидов с максимальным охватом и персонализацией под специфику вашего бизнеса"
+            />
+            <ChannelOverview
+               title="Используемые каналы:"
+               list={channelOverviewList}
+            />
+            <WorkStage list={workStages} />
+            <HowWeWork
+               sectionImage={howWeWorkImage}
+               sectionHeading={
+                  <>
+                     <span className="highlight">Для кого </span>подходит услуга
+                  </>
+               }
+               sectionSubHeading="Где наш подход работает лучше всего?"
+               sectionList={[
+                  "Массовый подбор: логистика, ритейл, производство, склады",
+                  "Региональные и вахтовые вакансии",
+                  "Высокая текучесть и дефицитные позиции",
+                  "Низкая эффективность с Avito, HH и др.",
+                  "Нужен результат, а не «много просмотров»",
+               ]}
+               sectionBottom={{
+                  heading: "Там, где сложно - приходим мы!",
+                  text: "Массовый подбор, регионы, текучка. Ищем не просмотры, а людей.",
+               }}
+            />
+            <PerformanceMetrics
+               sectionTitle={
+                  <>
+                     Наши <span className="highlight">кейсы</span>
+                  </>
+               }
+               metrics={[
+                  {
+                     label: "Складские рабочие",
+                     value: {
+                        initial: "100",
+                        countBy: "50",
+                        countEnd: "1200",
+                        suffix: "+",
+                     },
+                     description:
+                        "За 3 недели закрыли 1200 позиций в 4 регионах для логистической сети. Массовый подбор с высокой точностью",
                   },
-                  description:
-                     "За 3 недели закрыли 1200 позиций в 4 регионах для логистической сети. Массовый подбор с высокой точностью",
-               },
-               {
-                  label: "Водители вахтой",
-                  value: {
-                     initial: "100",
-                     countBy: "10",
-                     countEnd: "500",
-                     suffix: "+",
+                  {
+                     label: "Водители вахтой",
+                     value: {
+                        initial: "100",
+                        countBy: "10",
+                        countEnd: "500",
+                        suffix: "+",
+                     },
+                     description:
+                        "Подобрали более 500 вахтовых водителей за 45 дней. Применили мультиканальный подход и гео-таргетинг",
                   },
-                  description:
-                     "Подобрали более 500 вахтовых водителей за 45 дней. Применили мультиканальный подход и гео-таргетинг",
-               },
-               {
-                  label: "Ритейл",
-                  value: {
-                     initial: "10",
-                     countBy: "5",
-                     countEnd: "85",
-                     suffix: "%",
+                  {
+                     label: "Ритейл",
+                     value: {
+                        initial: "10",
+                        countBy: "5",
+                        countEnd: "85",
+                        suffix: "%",
+                     },
+                     description:
+                        "Достигли 85% релевантных откликов при массовом подборе в федеральную сеть ритейла - без «мусорного трафика»",
                   },
-                  description:
-                     "Достигли 85% релевантных откликов при массовом подборе в федеральную сеть ритейла - без «мусорного трафика»",
-               },
-            ]}
-         />
-         <ContactUs
-            title="Оставьте заявку"
-            subtitle="Узнайте, как мы закроем вашу вакансию через digital-маркетинг"
-         />
+               ]}
+            />
+            <ContactUs
+               title="Оставьте заявку"
+               subtitle="Узнайте, как мы закроем вашу вакансию через digital-маркетинг"
+            />
+         </div>
       </div>
    );
 }
