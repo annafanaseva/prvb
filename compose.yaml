@@ -1,0 +1,8 @@
+services: 
+  landing: 
+    container_name: prvb-landing
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+        - 5173:3000
