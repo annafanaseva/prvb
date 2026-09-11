@@ -10,4 +10,7 @@ export default defineConfig({
       environment: "jsdom",
       setupFiles: ["./vitest-setup.ts"],
    },
+   ssr: {
+      noExternal: ["gsap"],
+   },
 });
