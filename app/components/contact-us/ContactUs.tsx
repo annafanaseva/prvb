@@ -50,13 +50,12 @@ function ContactUs({ title, subtitle }: ContactUsProps) {
 
          const result = await response.json();
          // console.log("Lead created:", result);
-
          if (result.result) {
             // console.log("Спасибо! Ваша заявка отправлена.");
             alert("Спасибо! Ваша заявка отправлена.");
             setFormState(initialState);
          } else {
-            // console.log("Ошибка при отправке, попробуйте снова.");
+            console.log("Error occur here");
             alert("Ошибка при отправке, попробуйте снова.");
          }
       } catch (err) {
