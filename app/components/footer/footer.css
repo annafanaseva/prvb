@@ -161,7 +161,9 @@
    display: inline-flex;
    gap: 15px;
    align-items: center;
+   max-width: 400px;
 }
+
 .footer__bottom-section {
    display: flex;
    flex-direction: column;
