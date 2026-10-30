@@ -5,13 +5,18 @@ import RecruitmentFunnelOffer from "~/components/recruitment-funnel-offer/Recrui
 import ServiceOverview from "~/components/service-overview/ServiceOverview";
 import HowWeWork from "~/components/how-we-work/HowWeWork";
 import PerformanceMetrics from "~/components/performance-metrics/PerformanceMetrics";
-import TelegramChannels from "~/components/telegram-channels/TelegramChannels";
+import NetworkChannels from "~/components/network-channels/NetworkChannels";
+import NetworkPlatforms, {
+   NetworkPlatformsInline,
+} from "~/components/network-platforms/NetworkPlatforms";
 import NewClient from "~/components/new-client/NewClient";
 import ContactUs from "~/components/contact-us/ContactUs";
 import heroImage from "./hero-image.jpg";
 import howWeWorkImage from "./how-we-work.jpg";
 import howWeWork2Image from "./how-we-work2.jpg";
 import type { Route } from "./+types/tgNetworkService";
+import JsonLd from "~/components/json-ld/JsonLd";
+import { serviceJsonLd } from "~/seo/json-ld";
 
 export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
@@ -21,48 +26,51 @@ function tgNetworkService() {
    return (
       <div>
          {/* Meta */}
-         <title>Реклама вакансий в Telegram-каналах Rabotnik</title>
+         <title>
+            Размещение вакансий в Telegram, ВКонтакте и MAX | сеть Rabotnik
+         </title>
          <meta
             property="og:title"
-            content="Реклама вакансий в Telegram-каналах Rabotnik"
+            content="Размещение вакансий в Telegram, ВКонтакте и MAX | сеть Rabotnik"
          />
          <meta
             name="description"
-            content="Размещение вакансий в Telegram-каналах Rabotnik для подбора персонала. Охват аудитории по городам, прямой контакт с кандидатами и отклики на вакансии."
+            content="Размещаем вакансии в городских сообществах Rabotnik в Telegram, ВКонтакте и MAX. Охват соискателей по всей России, прямые отклики и точное попадание в аудиторию нужного города."
          />
          <meta
             name="keywords"
-            content="Telegram вакансии, размещение вакансий в Telegram, Telegram каналы Rabotnik, подбор персонала через Telegram, поиск сотрудников, рекрутинг в Telegram, реклама вакансий"
+            content="размещение вакансий, вакансии в Telegram, вакансии ВКонтакте, вакансии в MAX, сеть Rabotnik, сообщества с вакансиями, подбор персонала в соцсетях, реклама вакансий, поиск сотрудников"
          />
+         <JsonLd data={serviceJsonLd("/rabotnik-network")} />
          {/* Content */}
          <div className="tg-network-service">
             <Hero
                image={heroImage}
                showMetrics={false}
-               subTitle="Telegram стремительно набирает обороты как эффективный инструмент рекрутинга"
+               subTitle="Больше площадок, больше охват, больше кандидатов"
+               subTitleExtra={
+                  <NetworkPlatforms label="Сеть Rabotnik:" href="#network" />
+               }
             >
                <h1 className="hero__title">
-                  Размещение в сети{" "}
-                  <span className="highlight">
-                     TG
-                     <br /> каналов
-                  </span>{" "}
-                  Rabotnik
+                  Размещение вакансий
+                  <br />в сети <span className="highlight">Rabotnik</span>
                </h1>
             </Hero>
             <ServiceDescription
                title={
                   <>
-                     Быстрый найм – это в{" "}
-                     <span className="highlight">Telegram</span>
+                     Быстрый найм с <span className="highlight">Rabotnik</span>
                   </>
                }
                subTitle={
                   <>
-                     Быстрый найм за 15 минут:{" "}
-                     <span className="highlight">живая аудитория,</span> прямой
-                     отклик и доступ к кандидатам{" "}
-                     <span className="highlight"> по всей России</span>
+                     Размещаем вакансию там, где есть ваши кандидаты:{" "}
+                     <span className="highlight">
+                        сразу в нескольких соцсетях
+                     </span>{" "}
+                     и в городских сообществах{" "}
+                     <span className="highlight">по всей России</span>
                   </>
                }
             />
@@ -75,51 +83,58 @@ function tgNetworkService() {
                   </>
                }
                lists={[
-                  "Четкий таргет - мы нацеливаемся на людей, которые активно ищут работу",
-                  "Скорость - размещение вакансии занимает всего 10 минут, а первые отклики могут поступить уже через 15 минут.",
-                  "Прямой контакт: общайтесь с кандидатами напрямую в реальном времени",
-                  "Доступ к «пассивным» кандидатам: мы привлекаем специалистов, которые не рассылают резюме",
-                  "Собранная аудитория: в одном месте находятся кандидаты, ищущие работу в конкретном городе",
+                  "Четкий таргет: размещаем вакансии в сообществах с аудиторией конкретного города или региона",
+                  "Прямой контакт: кандидаты сразу видят предложение работодателя и могут быстро связаться с вами",
+                  "Дополнительный охват: Telegram, ВКонтакте и MAX позволяют охватить разные сегменты аудитории и не зависеть от одной площадки",
+                  "Доступ к пассивным кандидатам: вашу вакансию увидят не только те, кто прямо сейчас просматривает сайты поиска работы",
+                  "Городская аудитория: отдельные сообщества Rabotnik помогают показывать вакансии кандидатам именно в нужном регионе",
                ]}
             />
             <HowWeWork
                sectionImage={howWeWorkImage}
                sectionHeading={
                   <>
-                     Преимущество{" "}
-                     <span className="highlight"> Telegram-каналов</span>{" "}
-                     Rabotnik
+                     Преимущество <span className="highlight">сети Rabotnik</span>
                   </>
                }
                sectionParagraph={
                   <>
                      <span>
-                        Telegram-каналы позволяют быстро находить активных
-                        кандидатов и получать отклики уже в первые минуты после
-                        размещения вакансии.{" "}
+                        Одна вакансия, несколько каналов привлечения
+                        кандидатов.
                      </span>
                      <span>
-                        Они дают прямой контакт с соискателями, привлекают
-                        «пассивных» специалистов и обеспечивают точное попадание
-                        в целевую аудиторию по городам
+                        Сеть Rabotnik объединяет городские сообщества с
+                        аудиторией соискателей по всей России. Используем
+                        Telegram, ВКонтакте и MAX, чтобы увеличить охват
+                        вакансии и встретиться с кандидатом на той площадке,
+                        которой он пользуется каждый день.
                      </span>
                   </>
                }
                sectionBottom={{
                   heading: "Найдем кандидатов",
-                  text: "Прямой контакт с соискателями и точное попадание в целевую аудиторию - каждый отклик приносит результат",
+                  text: "Больше точек контакта с соискателями и точное попадание в аудиторию нужного города",
+                  showIcon: false,
                }}
             />
             <ServiceOverview
-               boxOneTitle="Наши Telegram каналы"
-               hrefBox1="#telegram-channels"
+               boxOneTitle="Наша сеть"
+               hrefBox1="#network"
                boxTwoTitle="Как всё происходит?"
                boxTwoList={[
-                  "Создадим продающий текст",
-                  "Подготовим цепляющий креатив",
-                  "Разместим пост",
+                  "Вы передаете нам вакансию",
+                  "Создаем продающий текст",
+                  "Подготавливаем цепляющий креатив",
+                  "Подбираем подходящие площадки и города",
+                  "Размещаем вакансию в сети Rabotnik",
                ]}
-               boxThreeText="Используйте возможности Telegram для эффективного подбора персонала с помощью Rabotnik!"
+               boxThreeText={
+                  <>
+                     Используйте сразу несколько каналов привлечения
+                     кандидатов: <NetworkPlatformsInline />
+                  </>
+               }
                boxFourTitle="Наши результаты"
                hrefBox4="#performance-metrics"
             />
@@ -131,13 +146,32 @@ function tgNetworkService() {
                      <span className="highlight">Для кого </span>подходит услуга
                   </>
                }
-               sectionSubHeading="Где наш подход работает лучше всего?"
                sectionList={[
-                  "Крупные компании с массовым набором персонала",
-                  "HR и рекрутеры с высокой потребностью в откликах",
-                  "Малый и средний бизнес, ищущий быстрый найм",
-                  "Компании с разъездным или удалённым персоналом",
+                  {
+                     title: "Крупным компаниям с массовым набором персонала",
+                     text: "Когда требуется регулярно привлекать большое количество кандидатов",
+                  },
+                  {
+                     title: "HR и рекрутерам с высокой потребностью в откликах",
+                     text: "Дополнительный источник кандидатов к классическим job-сайтам",
+                  },
+                  {
+                     title: "Малому и среднему бизнесу",
+                     text: "Когда сотрудника нужно найти быстро и без сложной рекламной кампании",
+                  },
+                  {
+                     title: "Компаниям с разъездным или удаленным персоналом",
+                     text: "Курьеры, склады, ритейл, доставка, офис, подработка, удаленная работа и другие направления",
+                  },
                ]}
+            />
+            <NetworkChannels
+               title={
+                  <>
+                     Площадки <span className="highlight">и цены</span>
+                  </>
+               }
+               subTitle="Сообщества Rabotnik в крупнейших городах России. Стоимость размещения одной вакансии в каждой соцсети и пакетом сразу во всех"
             />
             <PerformanceMetrics
                sectionTitle={
@@ -147,11 +181,11 @@ function tgNetworkService() {
                }
                metrics={[
                   {
-                     label: "Аудитория каналов",
+                     label: "Аудитория сети",
                      value: {
                         initial: "1000",
                         countBy: "100",
-                        countEnd: "25000",
+                        countEnd: "55000",
                         suffix: "+",
                      },
                      description: "Подписчиков",
@@ -164,7 +198,7 @@ function tgNetworkService() {
                         countEnd: "50",
                         suffix: "%",
                      },
-                     description: "От количества подписчиков ",
+                     description: "От количества подписчиков",
                   },
                   {
                      label: "Отклики",
@@ -174,26 +208,18 @@ function tgNetworkService() {
                         countEnd: "5",
                         suffix: "%",
                      },
-                     description: "От количества подписчиков ",
+                     description: "От количества подписчиков",
                   },
                ]}
             />
-            <TelegramChannels />
             <NewClient
                title={
                   <>
-                     Для новых клиентов первый пост на канале
-                     <span className="highlight"> - бесплатно!</span>
+                     Для новых клиентов первый пост{" "}
+                     <span className="highlight">бесплатно!</span>
                   </>
                }
-               subTitle={
-                  <>
-                     Ждем ваши посты с пометкой -{" "}
-                     <span className="highlight">
-                        новый клиент с сайта PRVB.ru
-                     </span>
-                  </>
-               }
+               subTitle="Попробуйте размещение в сети Rabotnik и оцените результат"
             />
             <ContactUs title="Хотите результат?" subtitle="Оставьте заявку" />
          </div>

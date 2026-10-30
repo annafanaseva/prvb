@@ -1,4 +1,6 @@
 import CaseListBlock from "~/components/case-list-block/CaseListBlock";
+import JsonLd from "~/components/json-ld/JsonLd";
+import { blogJsonLd } from "~/seo/json-ld";
 
 function Blog() {
    return (
@@ -19,6 +21,8 @@ function Blog() {
             name="keywords"
             content="блог HR-маркетинг, подбор персонала, рекрутинг, кадровый маркетинг, привлечение кандидатов, HR-кейсы, статьи для HR"
          />
+
+         <JsonLd data={blogJsonLd()} />
 
          {/* Content */}
          <div className="contact-page">

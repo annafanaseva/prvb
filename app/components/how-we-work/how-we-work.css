@@ -137,6 +137,11 @@
       flex-shrink: 0;
    }
 }
+.how-we-work__text-list-item-title {
+   display: block;
+   margin-bottom: 4px;
+   font-weight: 500;
+}
 .how-we-work__paragraph {
    display: flex;
    flex-direction: column;

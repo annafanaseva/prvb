@@ -11,6 +11,8 @@ import heroImage from "./hero-image.png";
 import howWeWorkImage from "./how-we-work.png";
 import "./talent-flow-service.css";
 import type { Route } from "./+types/talentFlowService";
+import JsonLd from "~/components/json-ld/JsonLd";
+import { serviceJsonLd } from "~/seo/json-ld";
 
 export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
@@ -60,6 +62,7 @@ export default function talentFlowService() {
             name="keywords"
             content="генерация кадрового трафика, кадровый трафик, лиды на вакансии, привлечение кандидатов, массовый подбор персонала, HR-маркетинг, рекрутинг, digital-рекрутинг"
          />
+         <JsonLd data={serviceJsonLd("/talent-flow")} />
          {/* Content */}
          <div className="home-page">
             <Hero
@@ -102,7 +105,7 @@ export default function talentFlowService() {
                boxThreeText="Мы настраиваем поток валидных лидов с максимальным охватом и персонализацией под специфику вашего бизнеса"
             />
             <ChannelOverview
-               title="Каналы генарации HR трафика:"
+               title="Каналы генерации HR трафика:"
                list={channelOverviewList}
             />
             <WorkStage list={workStages} />

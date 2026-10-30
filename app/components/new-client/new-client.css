@@ -81,7 +81,8 @@
    letter-spacing: -0.4px;
    text-align: end;
    @media only screen and (max-width: 1024px) {
-      width: 600px;
+      width: 100%;
+      max-width: 600px;
       font-size: 2rem;
       line-height: 35.2px;
    }

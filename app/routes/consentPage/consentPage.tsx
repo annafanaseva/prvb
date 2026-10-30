@@ -1,4 +1,6 @@
 import ProcessingPersonalData from "~/components/processing-personal-data/processingPersonalData";
+import JsonLd from "~/components/json-ld/JsonLd";
+import { legalPageJsonLd } from "~/seo/json-ld";
 
 function consentPage() {
    return (
@@ -17,6 +19,7 @@ function consentPage() {
             name="keywords"
             content="согласие на обработку персональных данных, персональные данные, обработка персональных данных"
          />
+         <JsonLd data={legalPageJsonLd("Согласие на обработку персональных данных", "/consent-page")} />
          {/* Content */}
          <ProcessingPersonalData />;
       </div>

@@ -12,6 +12,8 @@ import howWeWorkImage from "./how-we-work.jpg";
 import { faqList } from "./faqList.";
 import "./creative-ads.css";
 import type { Route } from "./+types/creativeAdsService";
+import JsonLd from "~/components/json-ld/JsonLd";
+import { serviceJsonLd } from "~/seo/json-ld";
 
 export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
@@ -36,6 +38,7 @@ function creativeAdsService() {
             name="keywords"
             content="креативы для вакансий, рекламные материалы для подбора персонала, HR-креативы, реклама вакансий, баннеры для вакансий, привлечение кандидатов, HR-маркетинг"
          />
+         <JsonLd data={serviceJsonLd("/creative-ads")} />
          {/* Content */}
          <div className="creative-ads-service">
             <Hero

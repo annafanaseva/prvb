@@ -8,7 +8,7 @@ interface ServiceOverviewProps {
    boxTwoText?: string;
    boxTwoList?: string[];
    boxThreeTitle?: string;
-   boxThreeText?: string;
+   boxThreeText?: React.ReactNode;
    boxThreeList?: string[];
    boxFourTitle?: string;
    hrefBox1?: string;

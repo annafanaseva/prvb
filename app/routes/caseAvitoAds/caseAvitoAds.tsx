@@ -10,6 +10,8 @@ import avitoPro from "./avito-pro.png";
 import avitoAds from "./avito-ads.jpg";
 import expertImg from "./expert.jpg";
 import "./сase-avito-ads.css";
+import JsonLd from "~/components/json-ld/JsonLd";
+import { articleJsonLd } from "~/seo/json-ld";
 
 function CaseAvitoAds() {
    return (
@@ -30,6 +32,8 @@ function CaseAvitoAds() {
             name="keywords"
             content="Avito Pro, Avito Ads, реклама вакансий на Авито, массовый подбор персонала, привлечение кандидатов, рекрутинг, Авито вакансии"
          />
+
+         <JsonLd data={articleJsonLd("/case-avito-ads")} />
 
          {/* Content */}
          <div className="case">

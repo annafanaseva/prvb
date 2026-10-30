@@ -110,7 +110,7 @@
 }
 .service-list-block__list-item:nth-of-type(4) {
    .service-list-block__list-item-icon {
-      width: 560px;
+      width: calc(100% - 40px);
       top: -10px;
       left: -20px;
       @media only screen and (min-width: 320px) and (max-width: 767px) {

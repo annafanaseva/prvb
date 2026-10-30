@@ -11,6 +11,8 @@ import ContactUs from "~/components/contact-us/ContactUs";
 import heroImage from "./hero-image.jpg";
 import howWeWorkImage from "./how-we-work.jpg";
 import type { Route } from "./+types/leadProcessingService";
+import JsonLd from "~/components/json-ld/JsonLd";
+import { serviceJsonLd } from "~/seo/json-ld";
 
 export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
@@ -35,6 +37,8 @@ function leadProcessingService() {
             name="keywords"
             content="обработка лидов, обработка откликов кандидатов, ресечинг кандидатов, call-центр для HR, прозвон анкет, валидация кандидатов, подбор персонала"
          />
+
+         <JsonLd data={serviceJsonLd("/lead-processing")} />
 
          {/* Content */}
          <div className="lead-processing-page">

@@ -7,6 +7,8 @@ import heroImage from "./hero-image.png";
 import infoImage from "./info-image.webp";
 import leadGeneration from "./lead-generation.jpg";
 import Interview from "~/components/interview/Interview";
+import JsonLd from "~/components/json-ld/JsonLd";
+import { articleJsonLd } from "~/seo/json-ld";
 
 function CaseLeadGeneration() {
    return (
@@ -27,6 +29,8 @@ function CaseLeadGeneration() {
             name="keywords"
             content="кадровая лидогенерация, HR-лидогенерация, лидогенерация для подбора персонала, привлечение кандидатов, HR-маркетинг, интервью эксперта"
          />
+
+         <JsonLd data={articleJsonLd("/case-lead-generation")} />
 
          {/* Content */}
          <div className="contact-page">

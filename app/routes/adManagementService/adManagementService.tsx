@@ -15,6 +15,8 @@ import target from "./target.png";
 import contekstnaya from "./contekstnaya.png";
 import posting from "./posting.png";
 import type { Route } from "./+types/adManagementService";
+import JsonLd from "~/components/json-ld/JsonLd";
+import { serviceJsonLd } from "~/seo/json-ld";
 
 export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
@@ -34,6 +36,8 @@ function adManagementService() {
             name="keywords"
             content="реклама вакансий, ведение рекламных кампаний, HR-реклама, продвижение вакансий, привлечение кандидатов, таргетированная реклама, контекстная реклама, подбор персонала"
          />
+
+         <JsonLd data={serviceJsonLd("/ad-management")} />
 
          {/* Content */}
          <div className="ad-management-service">

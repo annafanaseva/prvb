@@ -13,6 +13,8 @@ import { faqList } from "./faqList.";
 import { servicesList } from "~/components/service-list-block/services-list";
 import type { Route } from "./+types/home";
 import "./home.css";
+import JsonLd from "~/components/json-ld/JsonLd";
+import { homeJsonLd } from "~/seo/json-ld";
 
 const preloadServiceListImages = servicesList.map((list) => {
    return {
@@ -33,11 +35,11 @@ export default function Home() {
       <div>
          {/* Meta */}
          <title>
-            HR-лиды и трафик кандидатов для вакансий — агентство лидогенерации
+            HR-лиды и трафик кандидатов для вакансий | агентство лидогенерации
          </title>
          <meta
             property="og:title"
-            content="HR-лиды и трафик кандидатов для вакансий — агентство лидогенерации"
+            content="HR-лиды и трафик кандидатов для вакансий | агентство лидогенерации"
          />
          <meta
             name="description"
@@ -47,6 +49,8 @@ export default function Home() {
             name="keywords"
             content="кадровый трафик, генерация кадрового трафика, подбор персонала, HR-маркетинг, привлечение кандидатов, рекрутинг, массовый подбор персонала, кадровый маркетинг"
          />
+
+         <JsonLd data={homeJsonLd()} />
 
          {/* Content */}
          <div className="home-page">

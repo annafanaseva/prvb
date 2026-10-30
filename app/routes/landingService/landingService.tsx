@@ -13,6 +13,8 @@ import heroImage from "./hero-image.jpg";
 import howWeWorkImage from "./how-we-work.jpg";
 import { faqList } from "./faqList.";
 import type { Route } from "./+types/landingService";
+import JsonLd from "~/components/json-ld/JsonLd";
+import { serviceJsonLd } from "~/seo/json-ld";
 
 export const links: Route.LinksFunction = () => [
    { rel: "preload", href: heroImage, as: "image" },
@@ -37,6 +39,8 @@ function landingService() {
             name="keywords"
             content="лендинг для вакансии, HR-лендинг, сайт для подбора персонала, посадочная страница для вакансий, HR-сайт, привлечение кандидатов, рекрутинг"
          />
+
+         <JsonLd data={serviceJsonLd("/landing-service")} />
 
          {/* Content */}
          <div className="landing-service-page">

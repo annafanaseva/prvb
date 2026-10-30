@@ -1,7 +1,12 @@
 import caseImageLeadGeneration from "/case-list/lead-generation.png";
 import avitoAds from "/case-list/avito-ads.png";
 
-export const servicesList = [
+export const servicesList: {
+   label: string;
+   image: string;
+   href: string;
+   icon?: string;
+}[] = [
    {
       label: "Интервью с экспертом: что такое кадровая лидогенерация?",
       image: caseImageLeadGeneration,

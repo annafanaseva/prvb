@@ -2,6 +2,8 @@ import ContactUs from "~/components/contact-us/ContactUs";
 import Faq from "~/components/faq/Faq";
 import TextSlider from "~/components/text-slider/TextSlider";
 import { faqList } from "./faqList";
+import JsonLd from "~/components/json-ld/JsonLd";
+import { contactJsonLd } from "~/seo/json-ld";
 
 export default function Contact() {
    return (
@@ -20,6 +22,7 @@ export default function Contact() {
             name="keywords"
             content="контакты, подбор персонала, HR-маркетинг, привлечение кандидатов, кадровый трафик, рекрутинг"
          />
+         <JsonLd data={contactJsonLd()} />
          {/* Content */}
          <div className="contact-page">
             <ContactUs

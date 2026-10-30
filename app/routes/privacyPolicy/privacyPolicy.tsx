@@ -1,4 +1,6 @@
 import PrivacyPolicy from "~/components/privacy-policy/PrivacyPolicy";
+import JsonLd from "~/components/json-ld/JsonLd";
+import { legalPageJsonLd } from "~/seo/json-ld";
 
 function PrivacyPolicyPage() {
    return (
@@ -14,6 +16,7 @@ function PrivacyPolicyPage() {
             name="keywords"
             content="политика конфиденциальности, персональные данные, обработка персональных данных"
          />
+         <JsonLd data={legalPageJsonLd("Политика конфиденциальности", "/privacy-policy")} />
          {/* Content */}
          <PrivacyPolicy />;
       </div>

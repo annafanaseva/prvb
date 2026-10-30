@@ -60,7 +60,8 @@
    }
 }
 .landing-list-block__list-item {
-   width: 600px;
+   /* Two cards side by side must fit between the 120px page paddings on laptops */
+   width: min(600px, calc((100vw - 280px) / 2));
    position: relative;
    display: flex;
    flex-direction: column;
@@ -110,7 +111,7 @@
 }
 .landing-list-block__list-item:nth-of-type(4) {
    .landing-list-block__list-item-icon {
-      width: 560px;
+      width: calc(100% - 40px);
       top: -10px;
       left: -20px;
       @media only screen and (min-width: 320px) and (max-width: 767px) {

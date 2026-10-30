@@ -13,8 +13,13 @@ export default [
       "ad-management",
       "./routes/adManagementService/adManagementService.tsx"
    ),
-   route("tg-network", "./routes/tgNetworkService/tgNetworkService.tsx"),
+   route(
+      "rabotnik-network",
+      "./routes/tgNetworkService/tgNetworkService.tsx"
+   ),
+   route("tg-network", "./routes/tgNetworkService/tgNetworkRedirect.ts"),
    route("contact", "./routes/contact/contact.tsx"),
+   route("thanks", "./routes/thanks/thanks.tsx"),
    route("privacy-policy", "./routes/privacyPolicy/privacyPolicy.tsx"),
    route("consent-page", "./routes/consentPage/consentPage.tsx"),
    route("blog", "./routes/blog/blog.tsx"),

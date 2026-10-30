@@ -29,6 +29,7 @@
 }
 .faq-block__list {
    width: 1070px;
+   max-width: calc(100% - 40px);
    display: flex;
    flex-direction: column;
    gap: 20px;

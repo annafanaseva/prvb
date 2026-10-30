@@ -9,9 +9,16 @@ interface HeroProps {
    image: string;
    showMetrics: boolean;
    subTitle: string;
+   subTitleExtra?: React.ReactNode;
    children: React.ReactNode;
 }
-function Hero({ image, showMetrics, subTitle, children }: HeroProps) {
+function Hero({
+   image,
+   showMetrics,
+   subTitle,
+   subTitleExtra,
+   children,
+}: HeroProps) {
    const containerRef = useRef<HTMLDivElement>(null);
    useGSAP(
       () => {
@@ -82,6 +89,7 @@ function Hero({ image, showMetrics, subTitle, children }: HeroProps) {
                   <h3 className="hero__sub-title" data-testid="hero-sub-title">
                      {subTitle}
                   </h3>
+                  {subTitleExtra}
                   <svg
                      width="30"
                      height="30"

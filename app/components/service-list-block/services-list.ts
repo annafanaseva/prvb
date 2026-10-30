@@ -7,7 +7,6 @@ import serviceImage6 from "/services-list/service-6.jpg";
 import serviceIcon1 from "/services-list/service-1-icon.png";
 import serviceIcon3 from "/services-list/service-3-icon.png";
 import serviceIcon4 from "/services-list/service-4-icon.png";
-import serviceIcon5 from "/services-list/service-5-icon.png";
 import serviceIcon6 from "/services-list/service-6-icon.png";
 
 export const servicesList = [
@@ -36,10 +35,10 @@ export const servicesList = [
       href: "/talent-flow",
    },
    {
-      label: "Размещение в сети TG каналов Rabotnik",
+      label: "Размещение вакансий в сети Rabotnik",
       image: serviceImage5,
-      icon: serviceIcon5,
-      href: "/tg-network",
+      icon: "",
+      href: "/rabotnik-network",
    },
    {
       label: "Обработка лидов через call-центр (ресечинг)",

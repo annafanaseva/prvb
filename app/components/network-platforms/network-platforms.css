@@ -1,0 +1,80 @@
+.network-platforms {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 12px;
+   margin-top: 20px;
+   font-family: "Roboto", sans-serif;
+   @media only screen and (max-width: 912px) {
+      gap: 8px;
+      margin-top: 12px;
+   }
+   /* On phones the row takes the sub-title width instead of stretching the hero cut-out */
+   @media only screen and (min-width: 320px) and (max-width: 767px) {
+      width: 0;
+      min-width: 100%;
+   }
+}
+.network-platforms__label {
+   font-size: 1rem;
+   line-height: 19.2px;
+   font-weight: 500;
+   color: #000;
+   @media only screen and (max-width: 912px) {
+      font-size: 0.875rem;
+      line-height: 16.8px;
+   }
+}
+.network-platforms__list {
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+}
+.network-platforms__item {
+   display: inline-flex;
+   align-items: center;
+   gap: 8px;
+   padding: 6px 14px 6px 6px;
+   border-radius: 50px;
+   background-color: #fff;
+   font-size: 1rem;
+   line-height: 19.2px;
+   font-weight: 500;
+   color: #000;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+   transition:
+      transform 0.2s ease-in-out,
+      box-shadow 0.2s ease-in-out;
+   @media only screen and (max-width: 912px) {
+      gap: 6px;
+      padding: 4px 10px 4px 4px;
+      font-size: 0.875rem;
+      line-height: 16.8px;
+   }
+}
+.network-platforms__item:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+.network-platforms__icon {
+   width: 24px;
+   height: 24px;
+   object-fit: contain;
+   @media only screen and (max-width: 912px) {
+      width: 20px;
+      height: 20px;
+   }
+}
+.network-platforms__inline {
+   display: inline-flex;
+   align-items: center;
+   gap: 6px;
+   white-space: nowrap;
+   vertical-align: bottom;
+}
+.network-platforms__inline-icon {
+   width: 20px;
+   height: 20px;
+   object-fit: contain;
+}
